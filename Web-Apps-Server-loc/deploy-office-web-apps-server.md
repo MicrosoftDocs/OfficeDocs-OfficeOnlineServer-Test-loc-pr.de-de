@@ -54,7 +54,7 @@ Schauen Sie sich diese Ressourcen an, bevor Sie loslegen:
   - Office Web Apps Server ermöglicht Ihnen standardmäßig das Anzeigen von Office, aber nicht deren Bearbeitung. Zum Bearbeiten von Dateien benötigen Sie eine Bearbeitungslizenz, die unter [Planen von Office Web Apps (verwendet mit SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md) und [Konfigurieren der Lizenzierung in SharePoint Server 2013](https://technet.microsoft.com/de-de/library/jj219627\(v=office.15\)) behandelt wird.
 
 
-> [!TIP]
+> [!NOTE]
 > Sie können alle Aufgaben in Office 2013-Produktfamilien mit einer Maus, mit Tastenkombinationen oder per Fingereingabe durchführen. Weitere Informationen zur Verwendung von Tastenkombinationen und Fingereingaben bei Office-Produkten und -Diensten finden Sie unter <A href="https://go.microsoft.com/fwlink/p/?linkid=249150">Tastenkombinationen</A> und <A href="https://go.microsoft.com/fwlink/p/?linkid=253163">Office-Leitfaden für die Gestensteuerung</A>.
 
 
