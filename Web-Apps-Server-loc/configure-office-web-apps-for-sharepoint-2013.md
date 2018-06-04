@@ -1,4 +1,4 @@
-﻿---
+---
 title: Konfigurieren von Office Web Apps für SharePoint 2013
 TOCTitle: Konfigurieren von Office Web Apps für SharePoint 2013
 ms:assetid: a5276781-133b-413c-beca-b851e17c2081
@@ -113,11 +113,15 @@ Wenn Sie Office Web Apps in einer Testumgebung zusammen mit SharePoint 2013 übe
 
 Wird von diesem Befehl **False** zurückgegeben, führen Sie die folgenden Befehle aus, um die Einstellung auf **True** festzulegen:
 
+```
     $config = (Get-SPSecurityTokenServiceConfig)
-
+```
+```
     $config.AllowOAuthOverHttp = $true
-
+```
+```
     $config.Update()
+```
 
 Führen Sie den folgenden Befehl erneut aus, um sich zu vergewissern, dass die Einstellung "AllowOAuthOverHttp" nun auf **True** festgelegt ist:
 
