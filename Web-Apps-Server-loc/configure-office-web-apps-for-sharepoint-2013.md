@@ -1,4 +1,4 @@
-﻿---
+---
 title: Konfigurieren von Office Web Apps für SharePoint 2013
 TOCTitle: Konfigurieren von Office Web Apps für SharePoint 2013
 ms:assetid: a5276781-133b-413c-beca-b851e17c2081
@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+_**Letztes Änderungsdatum des Themas:** 2016-12-16_
 
 **Zusammenfassung:** Erläuterungen zur Konfiguration von SharePoint 2013 für die Verwendung von Office Web Apps.
 
@@ -133,7 +133,7 @@ Sollte dieser Schritt nicht erfolgreich sein, lesen Sie Behandeln von Problemen 
 
 ## In einer Produktionsumgebung, die HTTPS verwendet
 
-Vergewissern Sie sich zunächst, dass Office Web Apps Server gemäß den Schritten in [Deploy a single-server Office Web Apps Server farm that uses HTTPS](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#singlehttps) oder [Deploy a multi-server, load-balanced Office Web Apps Server farm that uses HTTPS](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#multihttps) eingerichtet ist.
+Vergewissern Sie sich zunächst, dass Office Web Apps Server gemäß den Schritten in [Deploy a single-server Office Web Apps Server farm that uses HTTPS](deploy-office-web-apps-server.md) oder [Deploy a multi-server, load-balanced Office Web Apps Server farm that uses HTTPS](deploy-office-web-apps-server.md) eingerichtet ist.
 
 ## Schritt 1: Öffnen der SharePoint 2013-Verwaltungsshell
 
