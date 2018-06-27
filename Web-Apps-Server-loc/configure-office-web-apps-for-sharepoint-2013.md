@@ -133,7 +133,7 @@ Sollte dieser Schritt nicht erfolgreich sein, lesen Sie Behandeln von Problemen 
 
 ## In einer Produktionsumgebung, die HTTPS verwendet
 
-Vergewissern Sie sich zunächst, dass Office Web Apps Server gemäß den Schritten in [Deploy a single-server Office Web Apps Server farm that uses HTTPS](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#singlehttps) oder [Deploy a multi-server, load-balanced Office Web Apps Server farm that uses HTTPS](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#multihttps) eingerichtet ist.
+Vergewissern Sie sich zunächst, dass Office Web Apps Server gemäß den Schritten in [Deploy a single-server Office Web Apps Server farm that uses HTTPS](deploy-office-web-apps-server#vorbereiten-von-servern-für-die-ausführung-von-office-web-apps-server) oder [Deploy a multi-server, load-balanced Office Web Apps Server farm that uses HTTPS](deploy-office-web-apps-server#bereitstellen-einer-office-web-apps-server-farm-mit-einem-server-der-https-verwendet) eingerichtet ist.
 
 ## Schritt 1: Öffnen der SharePoint 2013-Verwaltungsshell
 
