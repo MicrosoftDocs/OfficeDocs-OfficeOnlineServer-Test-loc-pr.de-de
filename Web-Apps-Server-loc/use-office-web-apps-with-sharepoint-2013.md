@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2017-05-26_
+_**Letztes Änderungsdatum des Themas:** 2017-05-26_
 
 **Zusammenfassung:** Dieser Abschnitt enthält Artikel dazu, wie Sie Office Web Apps für SharePoint 2013 lokal bereitstellen und konfigurieren.
 

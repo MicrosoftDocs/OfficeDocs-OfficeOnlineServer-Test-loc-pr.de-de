@@ -13,19 +13,42 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Entfernt Bindungen für Anwendungen, Dateinamenerweiterungen und zugehörige Aktionen in der aktuellen SharePoint-Farm, in der dieses Cmdlet ausgeführt wird.
 
 ## Syntax
 
-    Remove-SPWOPIBinding [[-Identity] <SPWopiBindingPipeBind>] [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Remove-SPWOPIBinding 
+      [[-Identity] <SPWopiBindingPipeBind>] 
+      [-AssignmentCollection <SPAssignmentCollection>] 
+      [-Confirm[<SwitchParameter>]] 
+      [-WhatIf[<SwitchParameter>]]
+```
 
-    Remove-SPWOPIBinding [-Action <String>] [-Application <String>] [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-Extension <String>] [-ProgId <String>] [-Server <String>] [-WhatIf [<SwitchParameter>]] [-WOPIZone <String>]
+```PowerShell
+Remove-SPWOPIBinding 
+      [-Action <String>] 
+      [-Application <String>] 
+      [-AssignmentCollection <SPAssignmentCollection>] 
+      [-Confirm[<SwitchParameter>]] 
+      [-Extension <String>] 
+      [-ProgId <String>] 
+      [-Server <String>] 
+      [-WhatIf[<SwitchParameter>]] 
+      [-WOPIZone <String>]
+```
 
-    Remove-SPWOPIBinding [-All <SwitchParameter>] [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Remove-SPWOPIBinding 
+      [-All <SwitchParameter>] 
+      [-AssignmentCollection <SPAssignmentCollection>] 
+      [-Confirm[<SwitchParameter>]] 
+      [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -139,19 +162,25 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL 1-----------------
 
-    Remove-SPWOPIBinding -Application "Excel"
+```PowerShell
+Remove-SPWOPIBinding -Application "Excel"
+```
 
 In diesem Beispiel werden alle Bindungen für Excel in der aktuellen SharePoint-Farm entfernt, in der dieses Cmdlet ausgeführt wird.
 
 \--------------BEISPIEL 2-----------------
 
-    Remove-SPWOPIBinding -All:$true
+```PowerShell
+Remove-SPWOPIBinding -All:$true
+```
 
 In diesem Beispiel werden alle Bindungen in der aktuellen SharePoint-Farm entfernt, in der dieses Cmdlet ausgeführt wird.
 
 \--------------BEISPIEL 3-----------------
 
-    Get-SPWOPIBinding -Action "MobileView" | Remove-SPWOPIBinding
+```PowerShell
+Get-SPWOPIBinding -Action "MobileView" | Remove-SPWOPIBinding
+```
 
 In diesem Beispiel werden alle Bindungen für Office Mobile Web Apps in der aktuellen SharePoint-Farm entfernt, in der dieses Cmdlet ausgeführt wird.
 

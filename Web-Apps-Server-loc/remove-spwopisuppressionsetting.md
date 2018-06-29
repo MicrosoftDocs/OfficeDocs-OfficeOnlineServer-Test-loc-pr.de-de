@@ -13,17 +13,31 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Entfernt die Unterdrückungseinstellungen für eine Dateinamenerweiterung oder Programm-ID und Aktion in der aktuellen SharePoint-Farm, in der dieses Cmdlet ausgeführt wird.
 
 ## Syntax
 
-    Remove-SPWOPISuppressionSetting [-Action <String>] [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-Extension <String>] [-ProgId <String>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Remove-SPWOPISuppressionSetting 
+      [-Action <String>] 
+      [-AssignmentCollection <SPAssignmentCollection>] 
+      [-Confirm[<SwitchParameter>]] 
+      [-Extension <String>] 
+      [-ProgId <String>] 
+      [-WhatIf[<SwitchParameter>]]
+```
 
-    Remove-SPWOPISuppressionSetting [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-Identity <String>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Remove-SPWOPISuppressionSetting 
+      [-AssignmentCollection <SPAssignmentCollection>] 
+      [-Confirm[<SwitchParameter>]] 
+      [-Identity <String>] 
+      [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -112,13 +126,17 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL 1-----------------
 
-    Remove-SPWOPISuppressionSetting -Extension "XLSX" -Action "view"
+```PowerShell
+Remove-SPWOPISuppressionSetting -Extension "XLSX" -Action "view"
+```
 
 In diesem Beispiel werden die Unterdrückungseinstellungen zum Anzeigen von Excel-Arbeitsmappen mit der Dateinamenerweiterung XLSX entfernt.
 
 \--------------BEISPIEL 2-----------------
 
-    Get-SPWOPISuppressionSetting | Remove-SPWOPISuppressionSetting
+```PowerShell
+Get-SPWOPISuppressionSetting | Remove-SPWOPISuppressionSetting
+```
 
 In diesem Beispiel werden alle Unterdrückungseinstellungen in der aktuellen SharePoint-Farm entfernt, in der dieses Cmdlet ausgeführt wird.
 

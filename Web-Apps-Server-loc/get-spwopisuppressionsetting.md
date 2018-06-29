@@ -13,15 +13,18 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Gibt die Unterdrückungseinstellungen für die aktuelle SharePoint-Farm zurück, in der dieses Cmdlet ausgeführt wird.
 
 ## Syntax
 
-    Get-SPWOPISuppressionSetting [-AssignmentCollection <SPAssignmentCollection>]
+```PowerShell
+Get-SPWOPISuppressionSetting 
+    [-AssignmentCollection <SPAssignmentCollection>]
+```
 
 ## Detaillierte Beschreibung
 
@@ -73,7 +76,9 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL-----------------
 
-    Get-SPWOPISuppressionSetting
+```PowerShell
+Get-SPWOPISuppressionSetting
+```
 
 In diesem Beispiel werden die Unterdrückungseinstellungen für die aktuelle SharePoint-Farm zurückgegeben, in der dieses Cmdlet ausgeführt wird. Zu den Unterdrückungseinstellungen gehören **DocType** und **WOPIAction**.
 

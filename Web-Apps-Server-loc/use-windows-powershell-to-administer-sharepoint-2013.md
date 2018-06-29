@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**SharePoint Foundation 2013, SharePoint Server 2013 Enterprise, SharePoint Server 2013 Standard_
+_**Gilt für:** SharePoint Foundation 2013, SharePoint Server 2013 Enterprise, SharePoint Server 2013 Standard_
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+_**Letztes Änderungsdatum des Themas:** 2016-12-16_
 
 **Zusammenfassung:**Hier erfahren Sie mehr über einfache Windows PowerShell-Cmdlets und -Konzepte sowie die Verwendung von Windows PowerShell mit SharePoint 2013.
 

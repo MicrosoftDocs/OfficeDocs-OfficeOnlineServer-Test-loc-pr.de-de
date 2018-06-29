@@ -13,15 +13,18 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Gibt die Zone zurück, die in der aktuellen SharePoint-Farm konfiguriert ist, die die WOPI-Anwendung verwenden soll.
 
 ## Syntax
 
-    Get-SPWOPIZone [-AssignmentCollection <SPAssignmentCollection>]
+```PowerShell
+Get-SPWOPIZone 
+    [-AssignmentCollection <SPAssignmentCollection>]
+```
 
 ## Detaillierte Beschreibung
 
@@ -74,7 +77,9 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL-----------------
 
-    Get-SPWOPIZone
+```PowerShell
+Get-SPWOPIZone
+```
 
 In diesem Beispiel wird die Zone zurückgegeben, die in der aktuellen SharePoint-Farm konfiguriert ist, die die WOPI-Anwendung (z. B. ein Server, auf dem Office Web Apps Server) ausgeführt wird) verwenden soll. Mögliche Rückgabewerte: "internal-http", "internal-https", "external-http" oder "external-https".
 

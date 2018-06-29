@@ -13,15 +13,21 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Ändert die Einstellungen des aktuellen Servers in einer Office Web Apps Server-Farm.
 
 ## Syntax
 
-    Set-OfficeWebAppsMachine [-Confirm [<SwitchParameter>]] [-Master <String>] [-Roles <String[]>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Set-OfficeWebAppsMachine 
+    [-Confirm[<SwitchParameter>]] 
+    [-Master <String>] 
+    [-Roles <String[]>] 
+    [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -97,19 +103,25 @@ Das Cmdlet **Set-OfficeWebAppsMachine** ändert die Einstellungen des aktuellen 
 
 \------------------BEISPIEL 1---------------------
 
-    (Get-OfficeWebAppsFarm).Machines
+```PowerShell
+(Get-OfficeWebAppsFarm).Machines
+```
 
 In diesem Beispiel werden die Rollen der einzelnen Server in der Office Web Apps Server-Farm angezeigt.
 
 \------------------BEISPIEL 2---------------------
 
-    Set-OfficeWebAppsMachine -Roles FrontEnd
+```PowerShell
+Set-OfficeWebAppsMachine -Roles FrontEnd
+```
 
 In diesem Beispiel wird der aktuelle Server als Front-End-Server konfiguriert.
 
 \------------------BEISPIEL 3---------------------
 
-    Set-OfficeWebAppsMachine -Roles All
+```PowerShell
+Set-OfficeWebAppsMachine -Roles All
+```
 
 In diesem Beispiel wird der aktuelle Server als Host aller Rollen konfiguriert.
 

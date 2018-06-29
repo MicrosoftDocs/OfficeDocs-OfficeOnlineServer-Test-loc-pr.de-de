@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+_**Letztes Änderungsdatum des Themas:** 2016-12-16_
 
 **Zusammenfassung:** Hier finden Sie Artikel zu Windows PowerShell-Cmdlets vom Typ "OfficeWebApps", die zum Konfigurieren von Office Web Apps Server verwendet werden.
 

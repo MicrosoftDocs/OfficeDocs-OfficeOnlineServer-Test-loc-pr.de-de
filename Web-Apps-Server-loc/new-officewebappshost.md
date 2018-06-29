@@ -13,15 +13,19 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Fügt der Liste "Zulassen" einer Office Web Apps Server-Farm eine Hostdomäne hinzu.
 
 ## Syntax
 
-    New-OfficeWebAppsHost -Domain <String>
+```PowerShell
+New-OfficeWebAppsHost 
+   -Domain <String>
+```
+   
 
 ## Detaillierte Beschreibung
 
@@ -78,7 +82,9 @@ Der Platzhalter \* gilt für alle Domänen, die der Zulassungsliste hinzugefügt
 
 \------------------BEISPIEL 1---------------------
 
-    New-OfficeWebAppsHost -domain "contoso.com"
+```PowerShell
+New-OfficeWebAppsHost -domain "contoso.com"
+```
 
 In diesem Beispiel wird die Domäne contoso.com der Zulassungsliste hinzugefügt.
 

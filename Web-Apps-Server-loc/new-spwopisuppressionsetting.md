@@ -13,15 +13,23 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Das **New-SPWOPISuppressionSetting**-Cmdlet deaktiviert Office Web Apps für die Aktion, Dateinamenerweiterung oder Programmkennung, die Sie in der aktuellen SharePoint-Farm angegeben haben.
 
 ## Syntax
 
-    New-SPWOPISuppressionSetting [-Action <String>] [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-Extension <String>] [-ProgId <String>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+New-SPWOPISuppressionSetting 
+    [-Action <String>] 
+    [-AssignmentCollection <SPAssignmentCollection>] 
+    [-Confirm[<SwitchParameter>]] 
+    [-Extension <String>] 
+    [-ProgId <String>] 
+    [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -103,9 +111,11 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL 1-----------------
 
-    New-SPWOPISuppressionSetting -Extension "XLSX" -Action "view"
+```PowerShell
+New-SPWOPISuppressionSetting -Extension "XLSX" -Action "view"
 
-    New-SPWOPISuppressionSetting -Extension "XLS" -Action "view"
+New-SPWOPISuppressionSetting -Extension "XLS" -Action "view"
+```
 
 In diesem Beispiel wird die Möglichkeit eines Benutzers deaktiviert, Office Web Apps zum Anzeigen von Excel-Arbeitsmappen mit den Dateinamenerweiterungen ".xlsx” oder “.xls” zu verwenden.
 

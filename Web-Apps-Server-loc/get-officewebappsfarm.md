@@ -13,15 +13,17 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:**  Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2013-12-18_
+_**Letztes Änderungsdatum des Themas:**  2013-12-18_
 
 Gibt Details zum "OfficeWebAppsFarm"-Objekt zurück, zu dem der aktuelle Server gehört.
 
 ## Syntax
 
-    Get-OfficeWebAppsFarm
+```PowerShell
+Get-OfficeWebAppsFarm
+```
 
 ## Detaillierte Beschreibung
 
@@ -37,13 +39,17 @@ Das Cmdlet **Get-OfficeWebAppsFarm** gibt Details zum OfficeWebAppsFarm -Objekt 
 
 \------------------BEISPIEL 1---------------------
 
-    Get-OfficeWebAppsFarm
+```PowerShell
+Get-OfficeWebAppsFarm
+```
 
 Dieses Beispiel gibt Einzelheiten zum "OfficeWebAppsFarm"-Objekt zurück.
 
 \------------------BEISPIEL 2---------------------
 
-    (Get-OfficeWebAppsFarm).Machines
+```PowerShell
+(Get-OfficeWebAppsFarm).Machines
+```
 
 Dieses Beispiel gibt Details zu den Servern zurück, die zur Office Web Apps Server-Farm gehören. Dazu gehören der Integritätsstatus und die Rollen jedes Servers.
 

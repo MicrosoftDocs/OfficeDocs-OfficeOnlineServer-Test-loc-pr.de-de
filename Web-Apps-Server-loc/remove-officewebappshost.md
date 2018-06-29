@@ -13,15 +13,17 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Entfernt eine Hostdomäne aus der Zulassungsliste einer Office Web Apps Server-Farm.
 
 ## Syntax
 
-    Remove-OfficeWebAppsHost -Domain <String>
+```PowerShell
+Remove-OfficeWebAppsHost -Domain <String>
+```
 
 ## Detaillierte Beschreibung
 
@@ -70,7 +72,9 @@ Das Cmdlet **Remove-OfficeWebAppsHost** dient zum Entfernen der angegebenen Host
 
 \------------------BEISPIEL 1---------------------
 
-    Remove-OfficeWebAppsHost -domain "contoso.com"
+```PowerShell
+Remove-OfficeWebAppsHost -domain "contoso.com"
+```
 
 In diesem Beispiel wird die Domäne "contoso.com" aus der Zulassungsliste entfernt.
 

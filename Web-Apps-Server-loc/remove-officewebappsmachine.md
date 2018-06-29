@@ -13,15 +13,19 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Entfernt den aktuellen Server aus der Office Web Apps Server-Farm.
 
 ## Syntax
 
-    Remove-OfficeWebAppsMachine [-Confirm [<SwitchParameter>]] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Remove-OfficeWebAppsMachine 
+       [-Confirm [<SwitchParameter>]] 
+       [-WhatIf [<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -76,7 +80,9 @@ Das Cmdlet **Remove-OfficeWebAppsMachine** entfernt den aktuellen Server aus der
 
 \------------------BEISPIEL 1---------------------
 
-    Remove-OfficeWebAppsMachine
+```PowerShell
+Remove-OfficeWebAppsMachine
+```
 
 In diesem Beispiel wird der aktuelle Server aus der Office Web Apps Server-Farm entfernt.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2017-10-05_
+_**Letztes Änderungsdatum des Themas:** 2017-10-05_
 
 **Zusammenfassung:** Informationen zur lokalen Bereitstellung von Office Web Apps Server für die Verwendung durch SharePoint 2013 und Lync Server 2013.
 
@@ -85,11 +85,15 @@ Die erforderlichen Komponenten für Windows Server 2008 R2, Windows Server 2012 
 
 2.  Öffnen Sie die Windows PowerShell-Eingabeaufforderung als Administrator, und führen Sie diese Befehle zum Installieren der erforderlichen Rollen und Dienste aus.
     
-        Import-Module ServerManager
+       ```PowerShell
+       Import-Module ServerManager
+       ```
     
     Führen Sie danach diesen Befehl aus:
     
-        Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
+       ```PowerShell
+       Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
+      ```
     
     Wenn Sie aufgefordert werden, starten Sie den Server neu.
 
@@ -97,7 +101,9 @@ Die erforderlichen Komponenten für Windows Server 2008 R2, Windows Server 2012 
 
 1.  Öffnen Sie die Windows PowerShell-Eingabeaufforderung als Administrator, und führen Sie diesen Befehl zum Installieren der erforderlichen Rollen und Dienste aus.
     
-        Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+       ```PowerShell
+       Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+       ```
     
     Wenn Sie aufgefordert werden, starten Sie den Server neu.
 
@@ -109,7 +115,9 @@ Die erforderlichen Komponenten für Windows Server 2008 R2, Windows Server 2012 
 
 2.  Öffnen Sie die Windows PowerShell-Eingabeaufforderung als Administrator, und führen Sie diesen Befehl zum Installieren der erforderlichen Rollen und Dienste aus.
     
-        Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+       ```PowerShell
+       Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+       ```
     
     Wenn Sie aufgefordert werden, starten Sie den Server neu.
 
@@ -198,7 +206,9 @@ Mit dieser Office Web Apps Server-Farm können Sie Office Web Apps-Funktionen f�
 
 Erstellen Sie mit dem Befehl **New-OfficeWebAppsFarm** eine neue Office Web Apps Server-Farm mit nur einem Server (siehe das folgende Beispiel).
 
-    New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+   ```PowerShell
+   New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+   ```
 
 **Parameter**
 
@@ -220,14 +230,16 @@ Nach Erstellung der Farm werden Details zur Farm an der Windows PowerShell-Einga
 
 Wenn Office Web Apps Server wie erwartet ausgeführt wird, sollte in Ihrem Webbrowser eine WOPI-Such-XML-Datei (Web Application Open Platform Interface Protocol) angezeigt werden. Die ersten Zeilen der Datei sollten ähnlich wie im folgenden Beispiel aussehen:
 
-    <?xml version="1.0" encoding="utf-8" ?> 
-    - <wopi-discovery>
-    - <net-zone name="internal-http">
-    - <app name="Excel" favIconUrl="http://servername/x/_layouts/images/FavIcon_Excel.ico" checkLicense="true">
-    <action name="view" ext="ods" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
-    <action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
-    <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
-    <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+```XML
+<?xml version="1.0" encoding="utf-8" ?> 
+- <wopi-discovery>
+- <net-zone name="internal-http">
+- <app name="Excel" favIconUrl="http://servername/x/_layouts/images/FavIcon_Excel.ico" checkLicense="true">
+<action name="view" ext="ods" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+<action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+<action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+<action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+```
 
 ## Schritt 3: Konfigurieren des Hosts
 
@@ -247,7 +259,9 @@ Mit dieser Office Web Apps Server-Farm können Sie Office Web Apps-Funktionen f�
 
 Erstellen Sie mit dem Befehl **New-OfficeWebAppsFarm** eine neue Office Web Apps Server-Farm mit nur einem Server (siehe das folgende Beispiel).
 
-    New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```PowerShell
+New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```
 
 **Parameter**
 
@@ -271,7 +285,7 @@ Nach Erstellung der Farm werden Details zur Farm an der Windows PowerShell-Einga
 
 Wenn Office Web Apps Server wie erwartet ausgeführt wird, sollte in Ihrem Webbrowser eine WOPI-Such-XML-Datei (Web Application Open Platform Interface Protocol) angezeigt werden. Die ersten Zeilen der Datei sollten ähnlich wie im folgenden Beispiel aussehen:
 
-``` 
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <wopi-discovery><net-zone 
 name="internal-https"><app name="Excel" checkLicense="true" 
@@ -280,8 +294,7 @@ name="view"
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
 default="true" ext="ods"/><action name="view" 
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
-default="true" ext="xls"/><action name="view"
- 
+default="true" ext="xls"/><action name="view" 
 ```
 
 
@@ -312,7 +325,9 @@ Ehe Sie anfangen, vergewissern Sie sich, dass Ihr Lastenausgleich wie unter [Las
 
 Erstellen Sie mit dem Befehl **New-OfficeWebAppsFarm** eine neue Office Web Apps Server-Farm auf dem ersten Server (siehe das folgende Beispiel).
 
-    New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```PowerShell
+New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```
 
 **Parameter**
 
@@ -332,7 +347,9 @@ Vorgehensweise bei den Meldungen "500 Web Service Exceptions" oder "500.21 – I
 
 Sobald Office Web Apps Server auf dem ersten Server ausgeführt wird, müssen Sie den Befehl **New-OfficeWebAppsMachine** auf jedem Server ausführen, den Sie der Office Web Apps Server-Farm hinzufügen möchten. Der Parameter **–MachineToJoin** fügt einer vorhandenen Office Web Apps Server-Farm den aktuellen Server hinzu. Verwenden Sie daher den Computernamen eines Servers, der bereits in der Office Web Apps Server-Farm vorhanden ist. Wenn beispielsweise server1.contoso.com bereits zur Farm gehört, geben Sie Folgendes an:
 
-    New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```PowerShell
+New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```
 
 Sind Sie an weiteren Informationen zu diesen Parametern interessiert? Diese Parameter sind unter [New-OfficeWebAppsMachine](new-officewebappsmachine.md) aufgeführt.
 
@@ -344,8 +361,10 @@ Nach Erstellung der Farm werden Details zur Farm an der Windows PowerShell-Einga
 
 Wenn Office Web Apps Server wie erwartet ausgeführt wird, sollte in Ihrem Webbrowser eine WOPI-Such-XML-Datei (Web Application Open Platform Interface Protocol) angezeigt werden. Die ersten Zeilen der Datei sollten ähnlich wie im folgenden Beispiel aussehen:
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
+```
 
 
 > [!TIP]
@@ -367,13 +386,17 @@ Falls .NET Framework 3.5-Features installiert und später wieder entfernt wurde
 
 **Für Windows Server 2008 R2**
 
-    %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
+```PowerShell
+%systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
 
-    iisreset /restart /noforce
+iisreset /restart /noforce
+```
 
 **Für Windows Server 2012 oder Windows Server 2012 R2**
 
-    dism /online /enable-feature /featurename:IIS-ASPNET45
+```PowerShell
+dism /online /enable-feature /featurename:IIS-ASPNET45
+```
 
 ## Siehe auch
 

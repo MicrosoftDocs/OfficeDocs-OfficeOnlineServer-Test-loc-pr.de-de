@@ -13,15 +13,17 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:**  Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2013-12-18_
+_**Letztes Änderungsdatum des Themas:**  2013-12-18_
 
 Gibt die Liste mit den Hostdomänen in der Zulassungsliste einer Office Web Apps Server-Farm zurück.
 
 ## Syntax
 
-    Get-OfficeWebAppsHost
+```PowerShell
+Get-OfficeWebAppsHost
+```
 
 ## Detaillierte Beschreibung
 
@@ -45,7 +47,9 @@ Der Platzhalter \* gilt für alle Domänen in der Zulassungsliste, sodass Anford
 
 \------------------BEISPIEL 1---------------------
 
-    Get-OfficeWebAppsHost
+```PowerShell
+Get-OfficeWebAppsHost
+```
 
 Dieses Beispiel gibt die Hostdomänen in der Zulassungsliste zurück.
 
