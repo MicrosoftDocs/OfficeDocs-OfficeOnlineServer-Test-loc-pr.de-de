@@ -13,15 +13,21 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Aktualisiert die Standardklickaktion für die Bindung einer Anwendung oder Dateinamenerweiterung.
 
 ## Syntax
 
-    Set-SPWOPIBinding [-Identity] <SPWopiBindingPipeBind> -DefaultAction <SwitchParameter> [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Set-SPWOPIBinding 
+    [-Identity] <SPWopiBindingPipeBind> -DefaultAction <SwitchParameter> 
+    [-AssignmentCollection <SPAssignmentCollection>] 
+    [-Confirm[<SwitchParameter>]] 
+    [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -106,7 +112,9 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL-----------------
 
-    Get-SPWOPIBinding -Action "view" -Application "Word"| Set-SPWOPIBinding -DefaultAction
+```PowerShell
+Get-SPWOPIBinding -Action "view" -Application "Word"| Set-SPWOPIBinding -DefaultAction
+```
 
 In diesem Beispiel wird die Standardklickaktion zum Anzeigen für ein Word-Dokument in einer SharePoint-Bibliothek festgelegt. Sie können überprüfen, ob die Standardklickaktion zum Anzeigen für Word festgelegt ist, indem Sie das Cmdlet **Get-SPWOPIBinding –Action “view” –Application “Word”** ausführen. Der Wert **IsDefaultAction** ist auf “True” festgelegt.
 

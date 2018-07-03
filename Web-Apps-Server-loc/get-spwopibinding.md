@@ -13,15 +13,24 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:**  Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:**  2015-03-09_
 
 Gibt eine Liste mit Bindungen zurück, die mithilfe von **New-SPWOPIBinding** in der aktuellen SharePoint-Farm erstellt wurden, in der dieses Cmdlet ausgeführt wird.
 
 ## Syntax
 
-    Get-SPWOPIBinding [-Action <String>] [-Application <String>] [-AssignmentCollection <SPAssignmentCollection>] [-Extension <String>] [-ProgId <String>] [-Server <String>] [-WOPIZone <String>]
+```PowerShell
+Get-SPWOPIBinding 
+    [-Action <String>] 
+    [-Application <String>] 
+    [-AssignmentCollection <SPAssignmentCollection>] 
+    [-Extension <String>] 
+    [-ProgId <String>] 
+    [-Server <String>] 
+    [-WOPIZone <String>]
+```
 
 ## Detaillierte Beschreibung
 
@@ -109,13 +118,17 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL 1-----------------
 
-    Get-SPWOPIBinding -Server "Server.corp.Contoso.com"
+```PowerShell
+Get-SPWOPIBinding -Server "Server.corp.Contoso.com"
+```
 
 In diesem Beispiel wird eine Liste mit Bindungen zurückgegeben, die in der aktuellen SharePoint-Farm erstellt wurden, in der dieses Cmdlet für die WOPI-Anwendung "Server.corp.Contoso.com" ausgeführt wird. Bei der WOPI-Anwendung kann es sich um den Server handeln, auf dem Office Web Apps Server ausgeführt wird.
 
 \--------------BEISPIEL 2-----------------
 
-    Get-SPWOPIZone | Get-SPWOPIBinding
+```PowerShell
+Get-SPWOPIZone | Get-SPWOPIBinding
+```
 
 In diesem Beispiel wird eine Liste mit Bindungen zurückgegeben, die in der aktuellen SharePoint-Farm erstellt wurden, in der dieses Cmdlet für die für die WOPI-Anwendung konfigurierte Zone ausgeführt wird.
 

@@ -13,15 +13,20 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Entfernt alle als instabil gekennzeichneten Server aus einer Office Web Apps Server-Farm.
 
 ## Syntax
 
-    Repair-OfficeWebAppsFarm [-Confirm [<SwitchParameter>]] [-Force <SwitchParameter>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Repair-OfficeWebAppsFarm 
+      [-Confirm[<SwitchParameter>]] 
+      [-Force <SwitchParameter>] 
+      [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -78,13 +83,17 @@ Wenn es mehrere instabile Server gibt, wird vor dem Entfernen der einzelnen Serv
 
 \------------------BEISPIEL 1---------------------
 
-    (Get-OfficeWebAppsFarm).Machines
+```PowerShell
+(Get-OfficeWebAppsFarm).Machines
+```
 
 In diesem Beispiel wird der Integritätsstatus aller Server in der Office Web Apps Server-Farm angezeigt.
 
 \------------------BEISPIEL 2---------------------
 
-    Repair-OfficeWebAppsFarm
+```PowerShell
+Repair-OfficeWebAppsFarm
+```
 
 In diesem Beispiel werden alle instabilen Server aus der Office Web Apps Server-Farm entfernt.
 

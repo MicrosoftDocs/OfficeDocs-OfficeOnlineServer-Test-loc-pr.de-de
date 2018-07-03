@@ -13,15 +13,21 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Konfiguriert die Zone, die von der aktuellen SharePoint-Farm verwendet wird, um im Browser zur WOPI-Anwendung zu navigieren.
 
 ## Syntax
 
-    Set-SPWOPIZone [[-Zone] <String>] [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Set-SPWOPIZone 
+    [[-Zone] <String>] 
+    [-AssignmentCollection <SPAssignmentCollection>] 
+    [-Confirm[<SwitchParameter>]] 
+    [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -98,7 +104,9 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL-----------------
 
-    Set-SPWOPIZone -Zone "external-https"
+```PowerShell
+Set-SPWOPIZone -Zone "external-https"
+```
 
 In diesem Beispiel wird die aktuelle SharePoint-Farm so konfiguriert, dass sie über HTTPS externe Verbindungen mit der WOPI-Anwendung (z. B. mit einem Server, auf dem Office Web Apps Server ausgeführt wird) herstellt.
 

@@ -13,15 +13,19 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Aktualisiert den öffentlichen Schlüssel, der zum Herstellen einer Verbindung mit der WOPI-Anwendung in der aktuellen SharePoint-Farm verwendet wird, in der dieses Cmdlet ausgeführt wird.
 
 ## Syntax
 
-    Update-SPWOPIProofKey [-AssignmentCollection <SPAssignmentCollection>] [-ServerName <String>]
+```PowerShell
+Update-SPWOPIProofKey 
+       [-AssignmentCollection <SPAssignmentCollection>] 
+       [-ServerName <String>]
+```
 
 ## Detaillierte Beschreibung
 
@@ -79,7 +83,9 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL-----------------
 
-    Update-SPWOPIProofKey -ServerName "Server.corp.Contoso.com"
+```PowerShell
+Update-SPWOPIProofKey -ServerName "Server.corp.Contoso.com"
+```
 
 In diesem Beispiel wird der aktuelle öffentliche Schlüssel von der WOPI-Anwendung (z. B. ein Server, auf dem Office Web Apps Server ausgeführt wird) abgerufen, und der in der SharePoint-Farm gespeicherte Schlüssel wird aktualisiert.
 

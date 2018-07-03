@@ -13,15 +13,17 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2013-12-18_
+_**Letztes Änderungsdatum des Themas:** 2013-12-18_
 
 Gibt Einzelheiten zum aktuellen Server in einer Office Web Apps Server-Farm zurück.
 
 ## Syntax
 
-    Get-OfficeWebAppsMachine
+```PowerShell
+Get-OfficeWebAppsMachine
+```
 
 ## Detaillierte Beschreibung
 
@@ -37,13 +39,17 @@ Das Cmdlet **Get-OfficeWebAppsMachine** gibt Einzelheiten zum aktuellen Server i
 
 \------------------BEISPIEL 1---------------------
 
-    Get-OfficeWebAppsMachine
+```PowerShell
+Get-OfficeWebAppsMachine
+```
 
 Dieses Beispiel gibt Einzelheiten zum aktuellen Server in einer Office Web Apps Server-Farm zurück.
 
 \------------------BEISPIEL 2---------------------
 
-    (Get-OfficeWebAppsFarm).Machines
+```PowerShell
+(Get-OfficeWebAppsFarm).Machines
+```
 
 Dieses Beispiel gibt Einzelheiten zu allen Servern in einer Office Web Apps Server-Farm zurück.
 

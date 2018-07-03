@@ -13,15 +13,57 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:**  Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-26_
+_**Letztes Änderungsdatum des Themas:**  2015-03-26_
 
 Erstellt eine neue Office Web Apps Server-Farm auf dem lokalen Computer.
 
 ## Syntax
 
-    New-OfficeWebAppsFarm [-AllowCEIP <SwitchParameter>] [-AllowHttp <SwitchParameter>] [-AllowHttpSecureStoreConnections <SwitchParameter>] [-CacheLocation <String>] [-CacheSizeInGB <Nullable>] [-CertificateName <String>] [-ClipartEnabled <SwitchParameter>] [-Confirm [<SwitchParameter>]] [-DocumentInfoCacheSize <Nullable>] [-EditingEnabled <SwitchParameter>] [-ExcelAllowExternalData <SwitchParameter>] [-ExcelConnectionLifetime <Nullable>] [-ExcelExternalDataCacheLifetime <Nullable>] [-ExcelPrivateBytesMax <Nullable>] [-ExcelRequestDurationMax <Nullable>] [-ExcelSessionTimeout <Nullable>] [-ExcelWarnOnDataRefresh <SwitchParameter>] [-ExcelWorkbookSizeMax <Nullable>] [-ExternalURL <String>] [-FarmOU <String>] [-Force <SwitchParameter>] [-InternalURL <String>] [-LogLocation <String>] [-LogRetentionInDays <Nullable>] [-LogVerbosity <String>] [-MaxMemoryCacheSizeInMB <Nullable>] [-MaxTranslationCharacterCount <Nullable>] [-OpenFromUncEnabled <SwitchParameter>] [-OpenFromUrlEnabled <SwitchParameter>] [-OpenFromUrlThrottlingEnabled <SwitchParameter>] [-PicturePasteDisabled <SwitchParameter>] [-Proxy <String>] [-RecycleActiveProcessCount <Nullable>] [-RemovePersonalInformationFromLogs <SwitchParameter>] [-RenderingLocalCacheLocation <String>] [-SSLOffloaded <SwitchParameter>] [-TranslationEnabled <SwitchParameter>] [-TranslationServiceAddress <String>] [-TranslationServiceAppId <String>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+New-OfficeWebAppsFarm 
+    [-AllowCEIP <SwitchParameter>] 
+    [-AllowHttp <SwitchParameter>] 
+    [-AllowHttpSecureStoreConnections <SwitchParameter>] 
+    [-CacheLocation <String>] 
+    [-CacheSizeInGB <Nullable>] 
+    [-CertificateName <String>] 
+    [-ClipartEnabled <SwitchParameter>] 
+    [-Confirm[<SwitchParameter>]] 
+    [-DocumentInfoCacheSize <Nullable>] 
+    [-EditingEnabled <SwitchParameter>] 
+    [-ExcelAllowExternalData <SwitchParameter>] 
+    [-ExcelConnectionLifetime <Nullable>] 
+    [-ExcelExternalDataCacheLifetime <Nullable>] 
+    [-ExcelPrivateBytesMax <Nullable>] 
+    [-ExcelRequestDurationMax <Nullable>] 
+    [-ExcelSessionTimeout <Nullable>] 
+    [-ExcelWarnOnDataRefresh <SwitchParameter>] 
+    [-ExcelWorkbookSizeMax <Nullable>] 
+    [-ExternalURL <String>] 
+    [-FarmOU <String>] 
+    [-Force <SwitchParameter>] 
+    [-InternalURL <String>] 
+    [-LogLocation <String>] 
+    [-LogRetentionInDays <Nullable>] 
+    [-LogVerbosity <String>] 
+    [-MaxMemoryCacheSizeInMB <Nullable>] 
+    [-MaxTranslationCharacterCount <Nullable>] 
+    [-OpenFromUncEnabled <SwitchParameter>] 
+    [-OpenFromUrlEnabled <SwitchParameter>] 
+    [-OpenFromUrlThrottlingEnabled <SwitchParameter>] 
+    [-PicturePasteDisabled <SwitchParameter>] 
+    [-Proxy <String>] 
+    [-RecycleActiveProcessCount <Nullable>] 
+    [-RemovePersonalInformationFromLogs <SwitchParameter>] 
+    [-RenderingLocalCacheLocation <String>] 
+    [-SSLOffloaded <SwitchParameter>] 
+    [-TranslationEnabled <SwitchParameter>] 
+    [-TranslationServiceAddress <String>] 
+    [-TranslationServiceAppId <String>] 
+    [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -363,7 +405,9 @@ Das Cmdlet **New-OfficeWebAppsFarm** erstellt eine neue Office Web Apps Server-F
 
 \------------------BEISPIEL 1---------------------
 
-    New-OfficeWebAppsFarm -InternalUrl "https://server.corp.contoso.com" -ExternalUrl "https://server.external.contoso.com" -EditingEnabled:$true -SSLOffloaded
+```PowerShell
+New-OfficeWebAppsFarm -InternalUrl "https://server.corp.contoso.com" -ExternalUrl "https://server.external.contoso.com" -EditingEnabled:$true -SSLOffloaded
+```
 
 In diesem Beispiel wird eine Office Web Apps Server-Farm auf dem lokalen Server erstellt, auf dem die Bearbeitung für Office Web Apps aktiviert ist. Die Farm wird für den Lastenausgleich konfiguriert, indem **SSLOffloaded** aktiviert wird, wodurch **AllowHttp** automatisch aktiviert wird. Wenn Sie keinen Lastenausgleich verwenden, müssen Sie **CertificateName** festlegen.
 

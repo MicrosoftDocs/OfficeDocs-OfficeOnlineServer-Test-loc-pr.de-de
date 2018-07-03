@@ -13,15 +13,57 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Konfiguriert die Einstellungen einer vorhandenen Office Web Apps Server-Farm.
 
 ## Syntax
 
-    Set-OfficeWebAppsFarm [-AllowCEIP <SwitchParameter>] [-AllowHttp <SwitchParameter>] [-AllowHttpSecureStoreConnections <SwitchParameter>] [-CacheLocation <String>] [-CacheSizeInGB <Nullable>] [-CertificateName <String>] [-ClipartEnabled <SwitchParameter>] [-Confirm [<SwitchParameter>]] [-DocumentInfoCacheSize <Nullable>] [-EditingEnabled <SwitchParameter>] [-ExcelAllowExternalData <SwitchParameter>] [-ExcelConnectionLifetime <Nullable>] [-ExcelExternalDataCacheLifetime <Nullable>] [-ExcelPrivateBytesMax <Nullable>] [-ExcelRequestDurationMax <Nullable>] [-ExcelSessionTimeout <Nullable>] [-ExcelWarnOnDataRefresh <SwitchParameter>] [-ExcelWorkbookSizeMax <Nullable>] [-ExternalURL <String>] [-FarmOU <String>] [-Force <SwitchParameter>] [-InternalURL <String>] [-LogLocation <String>] [-LogRetentionInDays <Nullable>] [-LogVerbosity <String>] [-MaxMemoryCacheSizeInMB <Nullable>] [-MaxTranslationCharacterCount <Nullable>] [-OpenFromUncEnabled <SwitchParameter>] [-OpenFromUrlEnabled <SwitchParameter>] [-OpenFromUrlThrottlingEnabled <SwitchParameter>] [-PicturePasteDisabled <SwitchParameter>] [-Proxy <String>] [-RecycleActiveProcessCount <Nullable>] [-RemovePersonalInformationFromLogs <SwitchParameter>] [-RenderingLocalCacheLocation <String>] [-SSLOffloaded <SwitchParameter>] [-TranslationEnabled <SwitchParameter>] [-TranslationServiceAddress <String>] [-TranslationServiceAppId <String>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+Set-OfficeWebAppsFarm 
+    [-AllowCEIP <SwitchParameter>] 
+    [-AllowHttp <SwitchParameter>] 
+    [-AllowHttpSecureStoreConnections <SwitchParameter>] 
+    [-CacheLocation <String>] 
+    [-CacheSizeInGB <Nullable>] 
+    [-CertificateName <String>] 
+    [-ClipartEnabled <SwitchParameter>] 
+    [-Confirm[<SwitchParameter>]] 
+    [-DocumentInfoCacheSize <Nullable>] 
+    [-EditingEnabled <SwitchParameter>] 
+    [-ExcelAllowExternalData <SwitchParameter>] 
+    [-ExcelConnectionLifetime <Nullable>] 
+    [-ExcelExternalDataCacheLifetime <Nullable>] 
+    [-ExcelPrivateBytesMax <Nullable>] 
+    [-ExcelRequestDurationMax <Nullable>] 
+    [-ExcelSessionTimeout <Nullable>] 
+    [-ExcelWarnOnDataRefresh <SwitchParameter>] 
+    [-ExcelWorkbookSizeMax <Nullable>] 
+    [-ExternalURL <String>] 
+    [-FarmOU <String>] 
+    [-Force <SwitchParameter>] 
+    [-InternalURL <String>] 
+    [-LogLocation <String>] 
+    [-LogRetentionInDays <Nullable>] 
+    [-LogVerbosity <String>] 
+    [-MaxMemoryCacheSizeInMB <Nullable>] 
+    [-MaxTranslationCharacterCount <Nullable>] 
+    [-OpenFromUncEnabled <SwitchParameter>] 
+    [-OpenFromUrlEnabled <SwitchParameter>] 
+    [-OpenFromUrlThrottlingEnabled <SwitchParameter>] 
+    [-PicturePasteDisabled <SwitchParameter>] 
+    [-Proxy <String>] 
+    [-RecycleActiveProcessCount <Nullable>] 
+    [-RemovePersonalInformationFromLogs <SwitchParameter>] 
+    [-RenderingLocalCacheLocation <String>] 
+    [-SSLOffloaded <SwitchParameter>] 
+    [-TranslationEnabled <SwitchParameter>] 
+    [-TranslationServiceAddress <String>] 
+    [-TranslationServiceAppId <String>] 
+    [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -424,19 +466,25 @@ Das Cmdlet **Set-OfficeWebAppsFarm** dient zum Konfigurieren der Einstellungen e
 
 \------------------BEISPIEL 1---------------------
 
-    Set-OfficeWebAppsFarm -ClipartEnabled:$true
+```PowerShell
+Set-OfficeWebAppsFarm -ClipartEnabled:$true
+```
 
 In diesem Beispiel wird das Einfügen von Clipart von der Office Online-Website aktiviert.
 
 \------------------BEISPIEL 2---------------------
 
-    Set-OfficeWebAppsFarm -EditingEnabled:$true
+```PowerShell
+Set-OfficeWebAppsFarm -EditingEnabled:$true
+```
 
 In diesem Beispiel werden Bearbeitungsfunktionen für Office Web Apps aktiviert.
 
 \------------------BEISPIEL 3---------------------
 
-    Set-OfficeWebAppsFarm -OpenFromUncEnabled:$false
+```PowerShell
+Set-OfficeWebAppsFarm -OpenFromUncEnabled:$false
+```
 
 In diesem Beispiel wird die Funktion zum Anzeigen von Office-Dateien über einen UNC-Pfad deaktiviert.
 

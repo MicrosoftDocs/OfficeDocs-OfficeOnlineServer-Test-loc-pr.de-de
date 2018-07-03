@@ -13,15 +13,22 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Fügt den aktuellen Server einer vorhandenen Office Web Apps Server-Farm hinzu.
 
 ## Syntax
 
-    New-OfficeWebAppsMachine [-MachineToJoin] <String> [-Confirm [<SwitchParameter>]] [-Force <SwitchParameter>] [-Roles <String[]>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+New-OfficeWebAppsMachine 
+    [-MachineToJoin] <String> 
+    [-Confirm[<SwitchParameter>]] 
+    [-Force <SwitchParameter>] 
+    [-Roles <String[]>] 
+    [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -100,7 +107,9 @@ Das Cmdlet **New-OfficeWebAppsMachine** dient zum Hinzufügen des aktuellen Serv
 
 \------------------BEISPIEL 1---------------------
 
-    New-OfficeWebAppsMachine -MachineToJoin server1.contoso.com
+```PowerShell
+New-OfficeWebAppsMachine -MachineToJoin server1.contoso.com
+```
 
 In diesem Beispiel wird der aktuelle Server der Office Web Apps Server-Farm hinzugefügt, die auf dem Server "server1.contoso.com" ausgeführt wird.
 

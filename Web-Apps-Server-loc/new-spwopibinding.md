@@ -13,15 +13,26 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Erstellt eine neue Bindung, um Dateinamenerweiterungen oder Anwendungen Aktionen in der aktuellen SharePoint-Farm zuzuordnen, in der dieses Cmdlet ausgeführt wird.
 
 ## Syntax
 
-    New-SPWOPIBinding -ServerName <String> [-Action <String>] [-AllowHTTP <SwitchParameter>] [-Application <String>] [-AssignmentCollection <SPAssignmentCollection>] [-Confirm [<SwitchParameter>]] [-Extension <String>] [-FileName <String>] [-ProgId <String>] [-WhatIf [<SwitchParameter>]]
+```PowerShell
+New-SPWOPIBinding -ServerName <String> 
+    [-Action <String>] 
+    [-AllowHTTP <SwitchParameter>] 
+    [-Application <String>] 
+    [-AssignmentCollection <SPAssignmentCollection>] 
+    [-Confirm[<SwitchParameter>]] 
+    [-Extension <String>] 
+    [-FileName <String>] 
+    [-ProgId <String>] 
+    [-WhatIf[<SwitchParameter>]]
+```
 
 ## Detaillierte Beschreibung
 
@@ -131,13 +142,17 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL 1-----------------
 
-    New-SPWOPIBinding -ServerName "Server.corp.Contoso.com"
+```PowerShell
+New-SPWOPIBinding -ServerName "Server.corp.Contoso.com"
+```
 
 In diesem Beispiel werden Bindungen für alle Anwendungen und Dateinamenerweiterungen erstellt, die die WOPI-Anwendung in der aktuellen SharePoint-Farm unterstützt, in der dieses Cmdlet ausgeführt wird.
 
 \--------------BEISPIEL 2-----------------
 
-    New-SPWOPIBinding -ServerName "Server.corp.Contoso.com" -Application "Excel"
+```PowerShell
+New-SPWOPIBinding -ServerName "Server.corp.Contoso.com" -Application "Excel"
+```
 
 In diesem Beispiel wird Excel allen Aktionen zugeordnet, die die WOPI-Anwendung in der aktuellen SharePoint-Farm für Excel unterstützt, in der dieses Cmdlet ausgeführt wird.
 
