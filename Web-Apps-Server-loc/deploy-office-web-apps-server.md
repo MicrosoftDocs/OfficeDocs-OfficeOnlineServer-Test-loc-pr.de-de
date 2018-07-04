@@ -208,7 +208,7 @@ Erstellen Sie mit dem Befehl **New-OfficeWebAppsFarm** eine neue Office Web Apps
 
   - **–EditingEnabled** ermöglicht die Bearbeitung in Office Web Apps bei Verwendung mit SharePoint 2013. Dieser Parameter wird von Lync Server 2013 nicht verwendet, da dieser Host die Bearbeitung nicht unterstützt.
 
-Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Vorgehensweise bei den Meldungen "500 Web Service Exceptions" oder "500.21 – Internal Server Error"
 
@@ -234,6 +234,7 @@ Wenn Office Web Apps Server wie erwartet ausgeführt wird, sollte in Ihrem Webbr
 Die Farm ist jetzt bereit, Office Web Apps-Funktionalität über HTTP für Hosts bereitzustellen. Weitere Informationen zum Konfigurieren von Hosts finden Sie unter [Konfigurieren von Office Web Apps für SharePoint 2013](configure-office-web-apps-for-sharepoint-2013.md).
 
 ## Bereitstellen einer Office Web Apps Server-Farm mit einem Server, die HTTPS verwendet
+<a name="singlehttps"> </a>
 
 Für die meisten Produktionsumgebungen wird HTTPS aufgrund seiner Sicherheitsfunktionen ausdrücklich empfohlen. HTTPS ist außerdem erforderlich, wenn Sie Lync Server 2013 Funktionalität von Office Web Apps Server zur Verfügung stellen möchten. Benutzer können anschließend PowerPoint-Übertragungen in einem Browser anzeigen. Nachfolgend wird die Installation einer Office Web Apps Server-Farm mit einem Server beschrieben, der HTTPS verwendet. Sie können gemäß den Anweisungen unter [Securing Office Web Apps Server communications by using HTTPS](plan-office-web-apps-server.md) ein Zertifikat auf dem Server installieren.
 
@@ -259,7 +260,7 @@ Erstellen Sie mit dem Befehl **New-OfficeWebAppsFarm** eine neue Office Web Apps
 
   - **–EditingEnabled** ist optional und ermöglicht die Bearbeitung in Office Web Apps bei Verwendung mit SharePoint 2013. Dieser Parameter wird von Lync Server 2013 nicht verwendet, da dieser Host die Bearbeitung nicht unterstützt.
 
-Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Vorgehensweise bei den Meldungen "500 Web Service Exceptions" oder "500.21 – Internal Server Error"
 
@@ -299,6 +300,7 @@ Die Farm ist jetzt bereit, über HTTPS Office Web Apps-Funktionalität für Host
   - [Bereitstellen von Office Web Apps Server und Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
 ## Bereitstellen einer Office Web Apps Server-Farm mit mehreren Servern, die Lastenausgleich und HTTPS verwendet
+<a name="multihttps"> </a>
 
 Wenn Sie in Ihrer Office Web Apps Server-Farm viel Datenverkehr erwarten und diese sowohl über das Internet als auch das interne Netzwerk verfügbar sein soll, sollten Sie die folgende Topologie wählen. In diesem Abschnitt wird erklärt, wie Sie eine Office Web Apps Server-Farm mit mehreren Servern installieren, die Lastenausgleich und HTTPS verwendet. Wenn Sie es Sie interessiert, [lesen Sie mehr über diese Topologie](plan-office-web-apps-server.md).
 
@@ -324,7 +326,7 @@ Erstellen Sie mit dem Befehl **New-OfficeWebAppsFarm** eine neue Office Web Apps
 
   - **–EditingEnabled** ist optional und ermöglicht die Bearbeitung in Office Web Apps bei Verwendung mit SharePoint 2013. Dieser Parameter wird von Lync Server 2013 nicht verwendet, da dieser Host die Bearbeitung nicht unterstützt.
 
-Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Vorgehensweise bei den Meldungen "500 Web Service Exceptions" oder "500.21 – Internal Server Error"
 
@@ -334,7 +336,7 @@ Sobald Office Web Apps Server auf dem ersten Server ausgeführt wird, müssen Si
 
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 
-Sind Sie an weiteren Informationen zu diesen Parametern interessiert? Diese Parameter sind unter [New-OfficeWebAppsMachine](new-officewebappsmachine.md) aufgeführt.
+Sind Sie an weiteren Informationen zu diesen Parametern interessiert? Diese Parameter sind unter [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps) aufgeführt.
 
 ## Schritt 3: Sicherstellen, dass die Office Web Apps Server-Farm erfolgreich erstellt wurde
 
@@ -378,8 +380,8 @@ Falls .NET Framework 3.5-Features installiert und später wieder entfernt wurde
 ## Siehe auch
 
 
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [Inhaltsübersicht für Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
