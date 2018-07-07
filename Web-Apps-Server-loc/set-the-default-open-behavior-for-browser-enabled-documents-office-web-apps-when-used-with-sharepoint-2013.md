@@ -1,5 +1,5 @@
 ﻿---
-title: Konfigurieren des Standardöffnungsverhaltens für browserfähige Dokumente (Verwendung von Office Web Apps mit SharePoint 2013)
+title: Standardöffnungsverhaltens für browserfähige Dokumente (Office Web Apps)
 TOCTitle: Konfigurieren des Standardöffnungsverhaltens für browserfähige Dokumente
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
 ms:mtpsurl: https://technet.microsoft.com/de-de/library/Ee837425(v=office.15)
