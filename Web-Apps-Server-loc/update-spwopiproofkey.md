@@ -13,15 +13,17 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2015-03-09_
+_**Letztes Änderungsdatum des Themas:** 2015-03-09_
 
 Aktualisiert den öffentlichen Schlüssel, der zum Herstellen einer Verbindung mit der WOPI-Anwendung in der aktuellen SharePoint-Farm verwendet wird, in der dieses Cmdlet ausgeführt wird.
 
 ## Syntax
 
+```PowerShell
     Update-SPWOPIProofKey [-AssignmentCollection <SPAssignmentCollection>] [-ServerName <String>]
+```
 
 ## Detaillierte Beschreibung
 
@@ -53,13 +55,11 @@ SharePoint-Verwaltungsshell
 <td><p>Optional</p></td>
 <td><p>Microsoft.SharePoint.PowerShell.SPAssignmentCollection</p></td>
 <td><p>Verwaltet Objekte zum Zweck der ordnungsgemäßen Beseitigung. Die Verwendung von Objekten wie beispielsweise <strong>SPWeb</strong> oder <strong>SPSite</strong> kann sehr viel Arbeitsspeicher erfordern, und für die Verwendung dieser Objekte in Windows PowerShell-Skripts muss der Arbeitsspeicher entsprechend verwaltet werden. Mit dem <strong>SPAssignment</strong>-Objekt können Sie einer Variablen Objekte zuweisen und die Objekte beseitigen, wenn sie nicht mehr benötigt werden, um Arbeitsspeicher freizugeben. Wenn die Objekte <strong>SPWeb</strong>, <strong>SPSite</strong> oder<strong>SPSiteAdministration</strong> verwendet werden, werden diese automatisch beseitigt, falls keine Zuweisungsauflistung oder kein <strong>Global</strong>-Parameter verwendet wird.</p>
-<div class="alert">
 
-> [!TIP]
+> [!Note]
 > Wenn der <STRONG>Global</STRONG>-Parameter verwendet wird, sind alle Objekte im globalen Speicher enthalten. Es kann vorkommen, dass nicht genügend Arbeitsspeicher vorhanden ist, falls Objekte nicht sofort verwendet werden oder mit dem Befehl <STRONG>Stop-SPAssignment</STRONG> beseitigt werden.
 
-
-</div></td>
+</td>
 </tr>
 <tr class="even">
 <td><p><strong>ServerName</strong></p></td>
@@ -79,7 +79,9 @@ SharePoint-Verwaltungsshell
 
 \--------------BEISPIEL-----------------
 
+```PowerShell
     Update-SPWOPIProofKey -ServerName "Server.corp.Contoso.com"
+```
 
 In diesem Beispiel wird der aktuelle öffentliche Schlüssel von der WOPI-Anwendung (z. B. ein Server, auf dem Office Web Apps Server ausgeführt wird) abgerufen, und der in der SharePoint-Farm gespeicherte Schlüssel wird aktualisiert.
 
