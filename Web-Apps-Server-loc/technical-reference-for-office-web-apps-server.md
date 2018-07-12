@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+**Gilt für:** Office Web Apps Server
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+**Letztes Änderungsdatum des Themas:** 2016-12-16
 
 **Zusammenfassung:** Enthält Links zu technischen Referenzartikeln für Office Web Apps Server, z. B. Hilfe zu den Windows PowerShell-Cmdlets vom Typ "OfficeWebApps".
 

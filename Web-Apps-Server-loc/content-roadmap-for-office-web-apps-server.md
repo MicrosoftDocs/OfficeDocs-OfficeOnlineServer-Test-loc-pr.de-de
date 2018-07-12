@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, Office Web Apps Server_
+**Gilt für:** Office Web Apps, Office Web Apps Server
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+**Letztes Änderungsdatum des Themas:** 2016-12-16
 
 **Zusammenfassung:** Leitfaden für die Artikel, Downloads und weiteren Ressourcen, die IT-Experten bei der lokalen Bereitstellung und Verwaltung von Office Web Apps Server unterstützen.
 

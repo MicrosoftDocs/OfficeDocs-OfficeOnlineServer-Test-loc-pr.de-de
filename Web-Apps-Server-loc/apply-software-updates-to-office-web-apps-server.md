@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+_**Letztes Änderungsdatum des Themas:** 2016-12-16_
 
 **Zusammenfassung:** In diesem Artikel wird erläutert, wie Softwareupdates auf eine Office Web Apps Server-Farm angewendet werden.
 

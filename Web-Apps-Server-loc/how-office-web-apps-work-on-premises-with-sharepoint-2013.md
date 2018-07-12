@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+**Letztes Änderungsdatum des Themas:** 2016-12-16
 
 **Zusammenfassung:** Artikel mit Informationen zu Office Web Apps, Office Web Apps Server und dazu, wie diese Komponenten lokal mit SharePoint 2013 funktionieren.
 

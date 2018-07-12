@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Verwenden von Office Web Apps mit SharePoint 2013
+# Verwenden von Office Web Apps mit SharePoint 2013 
 
- 
+**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Letztes Änderungsdatum des Themas:**2017-05-26_
+**Letztes Änderungsdatum des Themas:** 2017-05-26
 
 **Zusammenfassung:** Dieser Abschnitt enthält Artikel dazu, wie Sie Office Web Apps für SharePoint 2013 lokal bereitstellen und konfigurieren.
 
