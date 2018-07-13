@@ -11,11 +11,11 @@ ms.translationtype: HT
 
 # Inhaltsübersicht für Office Web Apps Server
 
- 
+ 
 
-_**Gilt für:** Office Web Apps, Office Web Apps Server_
+_**Gilt für:**Office Web Apps, Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:** 2016-12-16_
+_**Letztes Änderungsdatum des Themas:**2016-12-16_
 
 **Zusammenfassung:** Leitfaden für die Artikel, Downloads und weiteren Ressourcen, die IT-Experten bei der lokalen Bereitstellung und Verwaltung von Office Web Apps Server unterstützen.
 
@@ -83,7 +83,7 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 </p>
 <p>Hardware, Topologie und Netzwerkplanung</p>
 <ul>
-<li><p>Die IT-Abteilung von Microsoft IT hat Office Web Apps Server mit einer <a href="plan-office-web-apps-server.md">Topologie</a> bereitgestellt, die 200.000 Benutzer unterstützen kann. Bei Befolgen <a href="plan-office-web-apps-server.md">des Topologieleitfadens</a> kann ein Office Web Apps Server mit zwei Intel Xeon-Prozessoren (8 Kernen), 8 GB Arbeitsspeicher (RAM) und 60-GB-Festplatte gemäß unseren Leistungstests bis zu 10.000 Benutzer unterstützen, sofern der Hauptteil der Nutzung sich auf das Anzeigen beschränkt. Ein Server mit 16 Prozessorkernen und 16 GB RAM kann bis zu 20.000 Benutzer unterstützen. Diese Ergebnisse variieren je nach Nutzungsmustern und anderen Faktoren wie z. B. Netzwerkhardware.</p></li>
+<li><p>Die IT-Abteilung von Microsoft IT hat Office Web Apps Server mit einer <a href="plan-office-web-apps-server.md">Topologie</a> bereitgestellt, die 200.000 Benutzer unterstützen kann. Bei Befolgen <a href="plan-office-web-apps-server.md">des Topologieleitfadens</a> kann ein Office Web Apps Server mit zwei Intel Xeon-Prozessoren (8 Kernen), 8 GB Arbeitsspeicher (RAM) und 60-GB-Festplatte gemäß unseren Leistungstests bis zu 10.000 Benutzer unterstützen, sofern der Hauptteil der Nutzung sich auf das Anzeigen beschränkt. Ein Server mit 16 Prozessorkernen und 16 GB RAM kann bis zu 20.000 Benutzer unterstützen. Diese Ergebnisse variieren je nach Nutzungsmustern und anderen Faktoren wie z. B. Netzwerkhardware.</p></li>
 <li><p>Sie können die <a href="plan-office-web-apps-server.md">Office Web Apps Server-Kommunikation absichern</a>, indem Sie HTTPS verwenden, die SSL-Verschiebung an hardwaregestützte Lastenausgleichsmodule aktivieren, die Server einschränken, die einer Office Web Apps Server-Serverfarm basierend auf der Mitgliedschaft in einer Organisationseinheit beitreten können, oder den Hostzugriff auf Office Web Apps Server mithilfe einer Zulassungsliste begrenzen.</p></li>
 <li><p>Office Web Apps Server erfordert eine eigene Serverinstanz und kann nicht mit anderen Diensten oder Anwendungen wie SharePoint 2013 ausgeführt werden. Falls Ihre Hardware eingeschränkt ist, können Sie <a href="plan-office-web-apps-server.md">Office Web Apps Server virtualisieren</a>.</p></li>
 <li><p>Wir empfehlen eine <a href="plan-office-web-apps-server.md">Lastenausgleichslösung</a>, wenn Sie Office Web Apps Server auf zwei oder mehr Servern ausführen. Wenn Sie mit einem Lastenausgleichsmodul arbeiten, müssen Sie das Zertifikat im Lastenausgleichsmodul installieren. Von Office Web Apps Server verwendete Zertifikate müssen <a href="plan-office-web-apps-server.md">diese Anforderungen erfüllen</a>.</p></li>
@@ -102,7 +102,7 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 <li><p>Wenn Sie Office Web Apps Server für die Verwendung mit SharePoint 2013 bereitstellen, <a href="plan-office-web-apps-used-with-sharepoint-2013.md">planen Sie Office Web Apps für die Verwendung mit SharePoint 2013</a>.</p></li>
 <li><p>Die <a href="https://technet.microsoft.com/de-de/library/cc263526(v=office.15)">Browserunterstützung</a> für Office Web Apps ist identisch mit der für SharePoint 2013.</p></li>
 <li><p>Office Web Apps kann nur von SharePoint 2013-Webanwendungen verwendet werden, die die <a href="plan-office-web-apps-used-with-sharepoint-2013.md">anspruchsbasierte Authentifizierung</a> nutzen.</p></li>
-<li><p>Das Anzeigen von Dateien mit Office Web Apps ist kostenlos. Sie müssen allerdings eine <a href="plan-office-web-apps-used-with-sharepoint-2013.md">Bearbeitungslizenz erwerben</a>, falls Sie <a href="new-officewebappsfarm.md">Office Web Apps für die Bearbeitung aktivieren</a> möchten, wenn Office Web Apps Server lokal mit SharePoint 2013 verwendet wird.</p></li>
+<li><p>Das Anzeigen von Dateien mit Office Web Apps ist kostenlos. Sie müssen allerdings eine <a href="plan-office-web-apps-used-with-sharepoint-2013.md">Bearbeitungslizenz erwerben</a>, falls Sie <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps">Office Web Apps für die Bearbeitung aktivieren</a> möchten, wenn Office Web Apps Server lokal mit SharePoint 2013 verwendet wird.</p></li>
 </ul>
 <p><br />
 </p>
@@ -116,7 +116,7 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 <td><img src="images/Dn135237.b27be6ed-1dcc-481b-a53b-c2a47da9a2df(Office.15).png" title="Plansymbol" alt="Plansymbol" />
 <p></p></td>
 <td><p><strong>Migrieren von Office Web Apps in SharePoint 2010</strong></p></td>
-<td><p>Verwenden Sie derzeit SharePoint 2010-Produkte, und planen Sie eine Migration zu SharePoint 2013? Leider kann SharePoint 2010-Produkte nicht als Host für Office Web Apps Server fungieren, und Office Web Apps steht nach einem Upgrade auf SharePoint 2013 nicht mehr zur Verfügung. Machen Sie sich auf jeden Fall mit den <a href="plan-office-web-apps-used-with-sharepoint-2013.md">SharePoint-Authentifizierungsanforderungen vertraut</a>. Wenn Sie in SharePoint 2010 den klassischen Authentifizierungsmodus verwendet haben, müssen <a href="https://technet.microsoft.com/de-de/library/gg251985(v=office.15)">vom klassischen Authentifizierungsmodus zur anspruchsbasierten Authentifizierung migrieren</a>.</p>
+<td><p>Verwenden Sie derzeit SharePoint 2010-Produkte, und planen Sie eine Migration zu SharePoint 2013? Leider kann SharePoint 2010-Produkte nicht als Host für Office Web Apps Server fungieren, und Office Web Apps steht nach einem Upgrade auf SharePoint 2013 nicht mehr zur Verfügung. Machen Sie sich auf jeden Fall mit den <a href="plan-office-web-apps-used-with-sharepoint-2013.md">SharePoint-Authentifizierungsanforderungen vertraut</a>. Wenn Sie in SharePoint 2010 den klassischen Authentifizierungsmodus verwendet haben, müssen <a href="https://technet.microsoft.com/de-de/library/gg251985(v=office.15)">vom klassischen Authentifizierungsmodus zur anspruchsbasierten Authentifizierung migrieren</a>.</p>
 <p><br />
 </p>
 <p>Eine der größten Änderungen ist, dass Sie Office Web Apps nicht auch auf den Servern installieren, auf denen SharePoint 2013 ausgeführt wird. <a href="what’s-new-with-office-web-apps-when-used-with-sharepoint-2013.md">Welche weiteren Neuerungen gibt es bei Verwenden von Office Web Apps mit SharePoint 2013-Produkten?</a></p></td>
@@ -134,7 +134,7 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 <td><p>Der erste Schritt ist das <a href="deploy-office-web-apps-server.md">Vorbereiten der Server für Office Web Apps Server</a>. Als Nächstes<a href="deploy-office-web-apps-server.md">installieren Sie Office Web Apps Server</a> und spielen das neueste Office Web Apps Server-Update ein. Dann <a href="deploy-office-web-apps-server.md">installieren Sie Sprachpakete für Office Web Apps Server</a>.</p>
 <p><br />
 </p>
-<p>Um die Funktionsweise von Office Web Apps Server kennenzulernen, können Sie <a href="deploy-office-web-apps-server.md">eine Office Web Apps Server-Farm mit einem Server in einer Testumgebung bereitstellen</a>. Wenn Sie mehr Sicherheit wünschen, können Sie <a href="deploy-office-web-apps-server.md">eine Office Web Apps Server-Farm mit einem Server, die HTTPS verwendet, bereitstellen</a>. Wenn Sie viele Benutzer unterstützen müssen, können <a href="deploy-office-web-apps-server.md">eine Office Web Apps Server-Farm mit mehreren Servern, die Lastenausgleich und HTTPS verwendet, bereitstellen</a>.</p>
+<p>Um die Funktionsweise von Office Web Apps Server kennenzulernen, können Sie <a href="deploy-office-web-apps-server.md">eine Office Web Apps Server-Farm mit einem Server in einer Testumgebung bereitstellen</a>. Wenn Sie mehr Sicherheit wünschen, können Sie <a href="deploy-office-web-apps-server.md#singlehttps">eine Office Web Apps Server-Farm mit einem Server, die HTTPS verwendet, bereitstellen</a>. Wenn Sie viele Benutzer unterstützen müssen, können <a href="deploy-office-web-apps-server.md#multihttps">eine Office Web Apps Server-Farm mit mehreren Servern, die Lastenausgleich und HTTPS verwendet, bereitstellen</a>.</p>
 <p><br />
 </p>
 <p>Nachdem Sie Office Web Apps Server bereitgestellt haben, können Sie den Host konfigurieren. Sie können <a href="configure-office-web-apps-for-sharepoint-2013.md">SharePoint 2013 konfigurieren</a>, <a href="http://go.microsoft.com/fwlink/p/?linkid=256611">Exchange Server 2013 konfigurieren</a> und <a href="http://go.microsoft.com/fwlink/p/?linkid=256902">Lync Server 2013 konfigurieren</a> und anschließend Office Web Apps Server nutzen.</p>
@@ -165,10 +165,10 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 <p>Wenn Sie Office Web Apps Server für die Verwendung mit SharePoint 2013 bereitgestellt haben, werden Office-Dokumente standardmäßig im Browser geöffnet. Sie können <a href="set-the-default-open-behavior-for-browser-enabled-documents-office-web-apps-when-used-with-sharepoint-2013.md">dieses Verhalten so ändern, dass Office-Dokumente in einem Client geöffnet werden</a>.</p>
 <p><br />
 </p>
-<p>Wenn Ihre Organisation entscheidet, Excel Services anstelle von Excel Web App zu verwenden, um Arbeitsmappen in einem Browser anzuzeigen, können Sie das Windows PowerShell-Cmdlet <a href="new-spwopisuppressionsetting.md">New-SPWOPISuppressionSetting</a> verwenden, um Excel Web App für Excel-Arbeitsmappen zu deaktivieren.</p>
+<p>Wenn Ihre Organisation entscheidet, Excel Services anstelle von Excel Web App zu verwenden, um Arbeitsmappen in einem Browser anzuzeigen, können Sie das Windows PowerShell-Cmdlet <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps">New-SPWOPISuppressionSetting</a> verwenden, um Excel Web App für Excel-Arbeitsmappen zu deaktivieren.</p>
 <p><br />
 </p>
-<p>Wenn Sie <a href="configure-office-web-apps-for-sharepoint-2013.md">SharePoint 2013 von Office Web Apps Server trennen möchten</a>, verwenden Sie das Windows PowerShell-Cmdlet <a href="remove-spwopibinding.md">Remove-SPWOPIBinding</a>.</p></td>
+<p>Wenn Sie <a href="configure-office-web-apps-for-sharepoint-2013.md">SharePoint 2013 von Office Web Apps Server trennen möchten</a>, verwenden Sie das Windows PowerShell-Cmdlet <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps">Remove-SPWOPIBinding</a>.</p></td>
 </tr>
 <tr class="even">
 <td><img src="images/Dn135237.17bfbe9e-7e0e-48dd-887b-b94f8d8f9f22(Office.15).png" title="Problembehandlungssymbol" alt="Problembehandlungssymbol" /></td>
@@ -183,13 +183,13 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 </p>
 <p>Office Web Apps Server</p>
 <ul>
-<li><p><a href="windows-powershell-for-office-web-apps-server.md">Windows PowerShell für Office Web Apps Server</a></p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps">Windows PowerShell für Office Web Apps Server</a></p></li>
 </ul>
 <p><br />
 </p>
 <p>SharePoint 2013</p>
 <ul>
-<li><p><a href="windows-powershell-for-office-web-apps-sharepoint-2013.md">Windows PowerShell für Office Web Apps (SharePoint 2013)</a></p></li>
+<li><p><a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell für Office Web Apps (SharePoint 2013)</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -214,7 +214,7 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 <tr class="even">
 <td><p><img src="images/Ee890081.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chatsymbol" alt="Chatsymbol" /></p></td>
 <td><p><strong>Fragen und Feedback</strong></p></td>
-<td><p>Wenn Sie Fragen zur Bereitstellung und Verwaltung von Office Web Apps Server haben, können Sie diese im <a href="http://go.microsoft.com/fwlink/p/?linkid=259426">Planungs-, Bereitstellungs- und Kompatibilitätsforum für Office 2013 und Office 365 ProPlus</a> auf TechNet stellen.</p></td>
+<td><p>Wenn Sie Fragen zur Bereitstellung und Verwaltung von Office Web Apps Server haben, können Sie diese im <a href="http://go.microsoft.com/fwlink/p/?linkid=259426">Planungs-, Bereitstellungs- und Kompatibilitätsforum für Office 2013 und Office 365 ProPlus</a> auf TechNet stellen.</p></td>
 </tr>
 </tbody>
 </table>
