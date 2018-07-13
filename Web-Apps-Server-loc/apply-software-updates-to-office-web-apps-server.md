@@ -31,7 +31,7 @@ Nach der Einführung einer neuen Version von Office Web Apps Server stellt Micro
 
 
 > [!WARNING]
-> Die Anwendung von Office Web Apps Server-Updates mithilfe des automatischen Updateprozesses wird für Office Web Apps Server nicht unterstützt. Dies ist der Fall, da Updates für einen Office Web Apps Server auf eine spezifische Weise angewendet werden müssen, wie in diesem Artikel erläutert wird. Wenn Updates für Office Web Apps Server automatisch angewendet werden, können Benutzer möglicherweise keine Dokumente in Office Web Apps anzeigen oder bearbeiten. Wenn dies geschieht, müssen Sie Ihre Office Web Apps Server-Farm neu erstellen, Zum Neuerstellen einer Farm müssen Sie den Office Web Apps Server mithilfe von <A href="remove-officewebappsmachine.md">Remove-OfficeWebAppsMachine</A> aus der Farm entfernen und den Office Web Apps Server über die Option <STRONG>Software</STRONG> deinstallieren. Anschließend müssen Sie den Office Web Apps Server mithilfe der unter <A href="deploy-office-web-apps-server.md">Bereitstellen von Office Web Apps Server</A> beschriebenen Schritte neu installieren. Wenden Sie nach der Neuinstallation das Update mithilfe der in diesem Artikel erläuterten Schritte an.<BR>Lesen Sie unbedingt die Richtlinien im Artikel zum <A href="plan-office-web-apps-server.md">Planen von Updates für Office Web Apps Server</A>, und richten Sie einen Updateprozess für die Office Web Apps Server-Farm ein.
+> Die Anwendung von Office Web Apps Server-Updates mithilfe des automatischen Updateprozesses wird für Office Web Apps Server nicht unterstützt. Dies ist der Fall, da Updates für einen Office Web Apps Server auf eine spezifische Weise angewendet werden müssen, wie in diesem Artikel erläutert wird. Wenn Updates für Office Web Apps Server automatisch angewendet werden, können Benutzer möglicherweise keine Dokumente in Office Web Apps anzeigen oder bearbeiten. Wenn dies geschieht, müssen Sie Ihre Office Web Apps Server-Farm neu erstellen, Zum Neuerstellen einer Farm müssen Sie den Office Web Apps Server mithilfe von <A href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</A> aus der Farm entfernen und den Office Web Apps Server über die Option <STRONG>Software</STRONG> deinstallieren. Anschließend müssen Sie den Office Web Apps Server mithilfe der unter <A href="deploy-office-web-apps-server.md">Bereitstellen von Office Web Apps Server</A> beschriebenen Schritte neu installieren. Wenden Sie nach der Neuinstallation das Update mithilfe der in diesem Artikel erläuterten Schritte an.<BR>Lesen Sie unbedingt die Richtlinien im Artikel zum <A href="plan-office-web-apps-server.md">Planen von Updates für Office Web Apps Server</A>, und richten Sie einen Updateprozess für die Office Web Apps Server-Farm ein.
 
 
 
@@ -41,7 +41,7 @@ Die aktuelle Liste der verfügbaren Updates für Office Web Apps Server finden S
 
 Mit Updates, die für Office Web Apps Server veröffentlicht wurden, werden Office Web Apps Server und alle installierten Office Web Apps Server-Sprachpakete aktualisiert. Es gibt keine separaten Updates für Office Web Apps Server-Sprachpakete.
 
-Sie müssen die Office Web Apps Server-Farm als Teil des Updateprozesses neu erstellen. Überprüfen Sie zur Vorbereitung des Neuerstellens der Office Web Apps Server-Farm die aktuellen Eigenschaften der Office Web Apps Server-Farm, indem Sie das Windows PowerShell-Cmdlet **Get-OfficeWebAppFarm** ausführen und die Parameter für [New-OfficeWebAppsFarm](new-officewebappsfarm.md) überprüfen. Die Parameter, die Sie für **New-OfficeWebAppsFarm** verwenden, sollten dieselben sein, die Sie bei der erstmaligen Einrichtung der Office Web Apps Server-Farm verwendet haben.
+Sie müssen die Office Web Apps Server-Farm als Teil des Updateprozesses neu erstellen. Überprüfen Sie zur Vorbereitung des Neuerstellens der Office Web Apps Server-Farm die aktuellen Eigenschaften der Office Web Apps Server-Farm, indem Sie das Windows PowerShell-Cmdlet **Get-OfficeWebAppFarm** ausführen und die Parameter für [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) überprüfen. Die Parameter, die Sie für **New-OfficeWebAppsFarm** verwenden, sollten dieselben sein, die Sie bei der erstmaligen Einrichtung der Office Web Apps Server-Farm verwendet haben.
 
 
 > [!TIP]
@@ -64,17 +64,20 @@ Entfernen Sie zum Anwenden von Softwareupdates auf eine Office Web Apps Server-F
 
 2.  Öffnen Sie auf dem Office Web Apps Server, auf den Sie das Softwareupdate anwenden möchten, die Windows PowerShell-Eingabeaufforderung als Administrator, und führen Sie den folgenden Befehl aus.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
-
+    ```
 3.  Installieren Sie das Office Web Apps Server-Update auf diesem Server. Starten Sie den Server neu, wenn Sie dazu aufgefordert werden.
 
 4.  Öffnen Sie die Windows PowerShell-Eingabeaufforderung als Administrator, und führen Sie das **New-OfficeWebAppsFarm**-Cmdlet aus, um eine Office Web Apps Server-Farm neu zu erstellen. Die URL, die Sie für **–InternalURL** angeben, ist der Name des Servers, auf dem Office Web Apps Server ausgeführt wird (beispielsweise **http://Contoso-WAC**). In diesem Fall verwenden Sie denselben Namen, den Sie für die vorherige Office Web Apps Server-Farm verwendet haben. Verwenden Sie die gleichen zusätzlichen Parameter, die Sie beim erstmaligen Erstellen der Office Web Apps Server-Farm verwendet haben. Beispielsweise wird die Farm mit dem Parameter **–AllowHttp** für die Verwendung von HTTP konfiguriert, und der Parameter **–EditingEnabled** ermöglicht die Bearbeitung in Office Web Apps wenn diese Anwendung zusammen mit SharePoint 2013 verwendet wird. Der Parameter **–EditingEnabled** wird von Lync Server 2013 oder Exchange Server 2013 nicht verwendet, da diese Hosts keine Bearbeitungsfunktionen unterstützen.
     
     Mit dem Code im folgenden Beispiel wird eine neue Office Web Apps Server-Farm mit dem Namen **http://Contoso-WAC** erstellt.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```
     
-    Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+    Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Anwenden von Softwareupdates auf eine Office Web Apps Server-Farm mit mehreren Servern
 
@@ -88,7 +91,9 @@ Entfernen Sie zum Anwenden von Softwareupdates auf eine Office Web Apps Server-F
 
 3.  Öffnen Sie auf diesem Office Web Apps Server die Windows PowerShell-Eingabeaufforderung als Administrator, und führen Sie den folgenden Befehl aus.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
+    ```
 
 4.  Installieren Sie das Office Web Apps Server-Update auf diesem Server. Starten Sie den Server neu, wenn Sie dazu aufgefordert werden.
 
@@ -96,9 +101,11 @@ Entfernen Sie zum Anwenden von Softwareupdates auf eine Office Web Apps Server-F
     
     Mit dem Code im folgenden Beispiel wird eine neue Office Web Apps Server-Farm mit dem Namen **http://Contoso-WAC** erstellt.
     
-        New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```PowerShell
+       New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```
     
-    Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+    Informationen zu weiteren Parametern zum Konfigurieren von Übersetzungsdiensten, Proxyservern, ClipArt-Unterstützung und Onlineviewern finden Sie unter [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 6.  Je nachdem, wie viele neue Server die Office Web Apps Server-Farm enthält, führen Sie einen Lastenausgleich des Datenverkehrs für die neue Farm durch. Diesen Schritt können Sie auch später ausführen, wenn mehr aktualisierte Server vorhanden sind, die der Farm hinzugefügt werden sollen.
 
@@ -110,15 +117,17 @@ Entfernen Sie zum Anwenden von Softwareupdates auf eine Office Web Apps Server-F
     
     3.  Öffnen Sie die Windows PowerShell-Eingabeaufforderung als Administrator, und führen Sie den folgenden Befehl aus. Mit dem Parameter **–MachineToJoin** wird der vorhandene Server einer bestehenden Office Web Apps Server-Farm hinzugefügt. In diesem Fall möchten Sie den Server der aktualisierten Office Web Apps Server-Farm hinzufügen. Verwenden Sie also den Computernamen von einem der Server in der aktualisierten Office Web Apps Server-Farm.
         
+        ```PowerShell
             New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+        ```
 
 ## Siehe auch
 
 
-[Remove-OfficeWebAppsMachine](remove-officewebappsmachine.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[Get-OfficeWebAppsFarm](get-officewebappsfarm.md)  
+[Remove-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[Get-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)  
 
 
 [Inhaltsübersicht für Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  
