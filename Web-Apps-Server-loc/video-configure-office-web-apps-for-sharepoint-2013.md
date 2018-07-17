@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+_**Letztes Änderungsdatum des Themas:** 2016-12-16_
 
 **Zusammenfassung:** Vorstellung der neun wesentlichen Schritte zum Konfigurieren einer Office Web Apps Server-Farm für die Zusammenarbeit mit SharePoint 2013.
 
