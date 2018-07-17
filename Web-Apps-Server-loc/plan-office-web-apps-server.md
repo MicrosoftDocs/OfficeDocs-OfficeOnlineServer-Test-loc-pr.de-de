@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps Server_
+_**Gilt für:** Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:**2017-10-10_
+_**Letztes Änderungsdatum des Themas:** 2017-10-10_
 
 **Zusammenfassung:** Informationen zu Anforderungen und Voraussetzungen von Office Web Apps Server wie HTTPS, Zertifikate, Virtualisierung, Lastenausgleich, Topologien und Sicherheit.
 
@@ -332,7 +332,7 @@ Die folgende Liste enthält Empfehlungen, die Sie berücksichtigen sollten, wenn
 
   - **Plan für die ein- und ausgehende Kommunikation.** Leiten Sie in einer Bereitstellung, die mit dem Internet verbunden ist, die gesamte ausgehende Kommunikation über ein NAT-Gerät. Verarbeiten Sie die gesamte eingehende Kommunikation in einer Farm mit mehreren Servern über ein Lastenausgleichsmodul.
 
-  - **Achten Sie darauf, dass alle Server in der Office Web Apps Server-Farm zu einer Domäne zusammengeschlossen und Teil derselben Organisationseinheit sind.** Verwenden Sie den Parameter **FarmOU** im [New-OfficeWebAppsFarm](new-officewebappsfarm.md)-Cmdlet um zu verhindern, dass andere Server, die nicht dieser Organisationseinheit angehören, der Farm beitreten.
+  - **Achten Sie darauf, dass alle Server in der Office Web Apps Server-Farm zu einer Domäne zusammengeschlossen und Teil derselben Organisationseinheit sind.** Verwenden Sie den Parameter **FarmOU** im [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)-Cmdlet um zu verhindern, dass andere Server, die nicht dieser Organisationseinheit angehören, der Farm beitreten.
 
   - **Verwenden Sie für alle eingehenden Anforderungen das Hypertext Transfer Protocol Secure (HTTPS).**
 
@@ -390,13 +390,13 @@ Beachten Sie, dass bei der Verwendung von HTTP Datenverkehr vom Lastenausgleichs
 
 ## Beschränken, welche Server basierend auf der Mitgliedschaft in einer Organisationseinheit einer Office Web Apps Server-Farm beitreten können
 
-Sie können verhindern, dass nicht autorisierte Server in eine Office Web Apps Server-Farm aufgenommen werden, indem Sie eine Organisationseinheit für diese Server erstellen und dann beim Erstellen der Farm den Parameter „FarmOU“ angeben. Weitere Informationen zum Parameter „FarmOU“ finden Sie im Artikel [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Sie können verhindern, dass nicht autorisierte Server in eine Office Web Apps Server-Farm aufgenommen werden, indem Sie eine Organisationseinheit für diese Server erstellen und dann beim Erstellen der Farm den Parameter „FarmOU“ angeben. Weitere Informationen zum Parameter „FarmOU“ finden Sie im Artikel [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Einschränken des Hostzugriffs für Office Web Apps Server durch Verwendung der Zulassungsliste
 
 Die Liste „Zulassen“ ist ein Sicherheitsfeature, mit dem verhindert wird, dass Hosts unerlaubt der Office Web Apps Server-Farm beitreten und die Farm ohne Ihre Zustimmung für Dateivorgänge verwenden. Indem Sie die Domänen mit genehmigten Hosts der Liste „Zulassen“ hinzufügen, können Sie einschränken, für welche Hosts in Office Web Apps Server Anforderungen in Bezug auf Dateivorgänge, z. B. Dateiabruf, Metadatenabruf und Dateiänderungen, zulässig sind.
 
-Sie können der Liste „Zulassen“ Domänen hinzufügen, nachdem Sie die Office Web Apps Server-Farm erstellt haben. Im Artikel [New-OfficeWebAppsHost](new-officewebappshost.md) finden Sie Informationen zum Hinzufügen von Domänen zur Liste.
+Sie können der Liste „Zulassen“ Domänen hinzufügen, nachdem Sie die Office Web Apps Server-Farm erstellt haben. Im Artikel [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps) finden Sie Informationen zum Hinzufügen von Domänen zur Liste.
 
 
 > [!IMPORTANT]
@@ -406,19 +406,19 @@ Sie können der Liste „Zulassen“ Domänen hinzufügen, nachdem Sie die Offic
 
 ## Plan für Onlineviewer mit Office Web Apps Server
 
-Die Onlineviewerfunktionalität ist nach der Installation von Office Web Apps Server standardmäßig installiert. Prüfen Sie die folgenden Richtlinien, wenn Sie planen, Onlineviewer in Ihrer Organisation zu verwenden. In einigen Fällen kann es sinnvoll sein, einige Features in Onlineviewern zu deinstallieren. Diese Richtlinien beziehen sich auf die Parameter, die mit den Windows PowerShell-Cmdlets [New-OfficeWebAppsFarm](new-officewebappsfarm.md) und [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) festgelegt werden.
+Die Onlineviewerfunktionalität ist nach der Installation von Office Web Apps Server standardmäßig installiert. Prüfen Sie die folgenden Richtlinien, wenn Sie planen, Onlineviewer in Ihrer Organisation zu verwenden. In einigen Fällen kann es sinnvoll sein, einige Features in Onlineviewern zu deinstallieren. Diese Richtlinien beziehen sich auf die Parameter, die mit den Windows PowerShell-Cmdlets [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) und [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) festgelegt werden.
 
 ## Sicherheitsüberlegungen für Onlineviewer
 
 Für Dateien, die mit Onlineviewern in einem Webbrowser angezeigt werden können, darf keine Authentifizierung erforderlich sein. Anders gesagt, die Dateien müssen öffentlich verfügbar sein, da Onlineviewer beim Abrufen von Dateien keine Authentifizierung durchführen können. Es wird dringend empfohlen, dass über die Office Web Apps Server-Farm die Sie für Onlineviewer verwenden, entweder nur auf das Intranet oder auf das Internet zugegriffen werden kann, aber nicht auf beides. Der Grund ist, dass Office Web Apps Server nicht zwischen Anforderungen für Intranet- und Internet-URLs unterscheidet. Wenn beispielsweise aus dem Internet eine Intranet-URL angefordert wird, kann eine Sicherheitslücke entstehen, wenn ein internes Dokument für eine Person bereitgestellt wird, die es über das Internet anfordert.
 
-Aus dem gleichen Grund wird dringend empfohlen, die UNC-Unterstützung in Onlineviewern zu deaktivieren, wenn Sie Office Web Apps Server so konfiguriert haben, dass nur eine Verbindung mit dem Internet hergestellt wird. Legen Sie zum Deaktivieren der UNC-Unterstützung den Parameter „OpenFromUncEnabled“ mit den Windows PowerShell-Cmdlets [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (für neue Farmen) oder [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (für vorhandene Farmen) auf „False“ fest.
+Aus dem gleichen Grund wird dringend empfohlen, die UNC-Unterstützung in Onlineviewern zu deaktivieren, wenn Sie Office Web Apps Server so konfiguriert haben, dass nur eine Verbindung mit dem Internet hergestellt wird. Legen Sie zum Deaktivieren der UNC-Unterstützung den Parameter „OpenFromUncEnabled“ mit den Windows PowerShell-Cmdlets [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (für neue Farmen) oder [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (für vorhandene Farmen) auf „False“ fest.
 
 Als zusätzliche Sicherheitsvorkehrung können Onlineviewer nur Office-Dateien von höchstens 10 MB anzeigen.
 
 ## Konfigurationsoptionen für Onlineviewer
 
-Sie können Onlineviewer mit den folgenden Windows PowerShell-Parametern in [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (für neue Farmen) oder [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (für vorhandene Farmen) konfigurieren.
+Sie können Onlineviewer mit den folgenden Windows PowerShell-Parametern in [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (für neue Farmen) oder [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (für vorhandene Farmen) konfigurieren.
 
   - **OpenFromUrlEnabled**   Aktiviert oder deaktiviert die Onlineviewer. Dieser Parameter steuert Onlineviewer für Dateien, die URL- und UNC-Pfade haben. Dieser Parameter ist standardmäßig auf False (deaktiviert) gesetzt, wenn Sie eine neue Office Web Apps Server-Farm erstellen.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Letztes Änderungsdatum des Themas:**2016-12-16_
+_**Letztes Änderungsdatum des Themas:** 2016-12-16_
 
 **Zusammenfassung:** Enthält Richtlinien für die Planung der lokalen Verwendung von Office Web Apps mit SharePoint 2013.
 
@@ -69,7 +69,7 @@ Falls Sie Office Web Apps zusammen mit SharePoint 2010 installiert haben, ist O
 
 Sie können konfigurieren, ob Word-, PowerPoint-, Excel- und OneNote-Dateien in einer Clientanwendung (sofern installiert) oder im Browser geöffnet werden. Nachdem SharePoint 2013 für die Verwendung von Office Web Apps Server konfiguriert wurde, werden Office-Dateien im Browser geöffnet. Es gibt zwei Möglichkeiten, das Standardverhalten so zu ändern, dass Clientanwendungen Dateien direkt öffnen können:
 
-  - **Für die SharePoint 2013-Farm** Das Standardöffnungsverhalten kann mit den Cmdlets [New-SPWOPIBinding](new-spwopibinding.md) und [Set-SPWOPIBinding](set-spwopibinding.md)Windows PowerShell für die SharePoint 2013-Farm dateitypspezifisch angepasst werden.
+  - **Für die SharePoint 2013-Farm** Das Standardöffnungsverhalten kann mit den Cmdlets [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) und [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps)Windows PowerShell für die SharePoint 2013-Farm dateitypspezifisch angepasst werden.
 
   - **Lokale Auflistungen oder Dokumentbibliotheken** Administratoren und Benutzer von Websitesammlungen können angeben, ob Office-Dateien in Clientanwendungen geöffnet werden, wenn Office installiert ist. Benutzer können diese Einstellung in den Eigenschaften der Dokumentbibliothek ändern. Administratoren von Websitesammlungen können diese Einstellung in der Websitesammlungsverwaltung oder mit dem Install-SPFeature-Cmdlet ändern, um das OpenInClient-Feature zu installieren. Weitere Informationen finden Sie unter [Install-SPFeature](https://technet.microsoft.com/de-de/library/ff607825\(v=office.15\)).
 
