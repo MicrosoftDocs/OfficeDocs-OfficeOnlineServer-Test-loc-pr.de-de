@@ -12,9 +12,9 @@ ms.translationtype: HT
 # Konfigurieren von Office Web Apps für SharePoint 2013
  
 
-**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
+_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**Letztes Änderungsdatum des Themas:** 2016-12-16
+_**Letztes Änderungsdatum des Themas:** 2016-12-16_
 
 **Zusammenfassung:** Erläuterungen zur Konfiguration von SharePoint 2013 für die Verwendung von Office Web Apps.
 
