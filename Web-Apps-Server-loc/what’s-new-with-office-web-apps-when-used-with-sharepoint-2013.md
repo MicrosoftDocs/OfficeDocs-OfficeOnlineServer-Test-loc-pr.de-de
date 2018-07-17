@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Neuerungen bei Office Web Apps bei Verwendung mit SharePoint 2013
+# Neuerungen bei Office Web Apps bei Verwendung mit SharePoint 2013 
 
- 
+_<strong>Gilt für:</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Letztes Änderungsdatum des Themas:** 2016-12-16_
+_<strong>Letztes Änderungsdatum des Themas:</strong> 2016-12-16_
 
 **Zusammenfassung:** Neue Features für SharePoint 2013-Benutzer und -Administratoren bei der Verwendung von Office Web Apps.
 

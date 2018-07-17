@@ -10,7 +10,6 @@ ms.translationtype: HT
 ---
 
 # Konfigurieren von Office Web Apps für SharePoint 2013
-
  
 
 _**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_

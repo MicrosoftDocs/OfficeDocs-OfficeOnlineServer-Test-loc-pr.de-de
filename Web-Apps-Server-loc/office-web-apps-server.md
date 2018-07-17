@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Office Web Apps Server
+# Office Web Apps Server 
 
- 
+_<strong>Gilt für:</strong> Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Gilt für:** Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Letztes Änderungsdatum des Themas:** 2016-12-16_
+_<strong>Letztes Änderungsdatum des Themas:</strong> 2016-12-16_
 
 **Zusammenfassung:** Enthält Artikel, die Ihnen die Verwendung von Office Web Apps Server in der neu aktualisierten Office Web Apps-Architektur erleichtern.
 

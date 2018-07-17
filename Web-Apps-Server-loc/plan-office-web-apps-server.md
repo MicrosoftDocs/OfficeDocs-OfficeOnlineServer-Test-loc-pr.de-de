@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:** Office Web Apps Server_
+_<strong>Gilt für:</strong> Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:** 2017-10-10_
+_<strong>Letztes Änderungsdatum des Themas:</strong> 2017-10-10_
 
 **Zusammenfassung:** Informationen zu Anforderungen und Voraussetzungen von Office Web Apps Server wie HTTPS, Zertifikate, Virtualisierung, Lastenausgleich, Topologien und Sicherheit.
 
