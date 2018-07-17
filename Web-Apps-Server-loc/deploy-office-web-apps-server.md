@@ -377,7 +377,9 @@ Falls .NET Framework 3.5-Features installiert und später wieder entfernt wurde
 
 ```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
+```
 
+```PowerShell
     iisreset /restart /noforce
 ```
 
