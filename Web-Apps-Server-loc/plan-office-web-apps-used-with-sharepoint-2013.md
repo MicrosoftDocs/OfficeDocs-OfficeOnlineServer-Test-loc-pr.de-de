@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
+_<strong>Gilt für:</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**Letztes Änderungsdatum des Themas:** 2016-12-16
+_<strong>Letztes Änderungsdatum des Themas:</strong> 2016-12-16_
 
 **Zusammenfassung:** Enthält Richtlinien für die Planung der lokalen Verwendung von Office Web Apps mit SharePoint 2013.
 

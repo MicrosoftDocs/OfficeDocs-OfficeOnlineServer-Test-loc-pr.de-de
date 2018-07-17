@@ -10,10 +10,9 @@ ms.translationtype: HT
 ---
 
 # Inhaltsübersicht für Office Web Apps Server
+ 
 
- 
-
-**Gilt für:** Office Web Apps, Office Web Apps Server
+<strong>Gilt für:</strong> Office Web Apps, Office Web Apps Server
 
 **Letztes Änderungsdatum des Themas:** 2016-12-16
 
@@ -83,7 +82,7 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 </p>
 <p>Hardware, Topologie und Netzwerkplanung</p>
 <ul>
-<li><p>Die IT-Abteilung von Microsoft IT hat Office Web Apps Server mit einer <a href="plan-office-web-apps-server.md">Topologie</a> bereitgestellt, die 200.000 Benutzer unterstützen kann. Bei Befolgen <a href="plan-office-web-apps-server.md">des Topologieleitfadens</a> kann ein Office Web Apps Server mit zwei Intel Xeon-Prozessoren (8 Kernen), 8 GB Arbeitsspeicher (RAM) und 60-GB-Festplatte gemäß unseren Leistungstests bis zu 10.000 Benutzer unterstützen, sofern der Hauptteil der Nutzung sich auf das Anzeigen beschränkt. Ein Server mit 16 Prozessorkernen und 16 GB RAM kann bis zu 20.000 Benutzer unterstützen. Diese Ergebnisse variieren je nach Nutzungsmustern und anderen Faktoren wie z. B. Netzwerkhardware.</p></li>
+<li><p>Die IT-Abteilung von Microsoft IT hat Office Web Apps Server mit einer <a href="plan-office-web-apps-server.md">Topologie</a> bereitgestellt, die 200.000 Benutzer unterstützen kann. Bei Befolgen <a href="plan-office-web-apps-server.md">des Topologieleitfadens</a> kann ein Office Web Apps Server mit zwei Intel Xeon-Prozessoren (8 Kernen), 8 GB Arbeitsspeicher (RAM) und 60-GB-Festplatte gemäß unseren Leistungstests bis zu 10.000 Benutzer unterstützen, sofern der Hauptteil der Nutzung sich auf das Anzeigen beschränkt. Ein Server mit 16 Prozessorkernen und 16 GB RAM kann bis zu 20.000 Benutzer unterstützen. Diese Ergebnisse variieren je nach Nutzungsmustern und anderen Faktoren wie z. B. Netzwerkhardware.</p></li>
 <li><p>Sie können die <a href="plan-office-web-apps-server.md">Office Web Apps Server-Kommunikation absichern</a>, indem Sie HTTPS verwenden, die SSL-Verschiebung an hardwaregestützte Lastenausgleichsmodule aktivieren, die Server einschränken, die einer Office Web Apps Server-Serverfarm basierend auf der Mitgliedschaft in einer Organisationseinheit beitreten können, oder den Hostzugriff auf Office Web Apps Server mithilfe einer Zulassungsliste begrenzen.</p></li>
 <li><p>Office Web Apps Server erfordert eine eigene Serverinstanz und kann nicht mit anderen Diensten oder Anwendungen wie SharePoint 2013 ausgeführt werden. Falls Ihre Hardware eingeschränkt ist, können Sie <a href="plan-office-web-apps-server.md">Office Web Apps Server virtualisieren</a>.</p></li>
 <li><p>Wir empfehlen eine <a href="plan-office-web-apps-server.md">Lastenausgleichslösung</a>, wenn Sie Office Web Apps Server auf zwei oder mehr Servern ausführen. Wenn Sie mit einem Lastenausgleichsmodul arbeiten, müssen Sie das Zertifikat im Lastenausgleichsmodul installieren. Von Office Web Apps Server verwendete Zertifikate müssen <a href="plan-office-web-apps-server.md">diese Anforderungen erfüllen</a>.</p></li>
@@ -116,7 +115,7 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 <td><img src="images/Dn135237.b27be6ed-1dcc-481b-a53b-c2a47da9a2df(Office.15).png" title="Plansymbol" alt="Plansymbol" />
 <p></p></td>
 <td><p><strong>Migrieren von Office Web Apps in SharePoint 2010</strong></p></td>
-<td><p>Verwenden Sie derzeit SharePoint 2010-Produkte, und planen Sie eine Migration zu SharePoint 2013? Leider kann SharePoint 2010-Produkte nicht als Host für Office Web Apps Server fungieren, und Office Web Apps steht nach einem Upgrade auf SharePoint 2013 nicht mehr zur Verfügung. Machen Sie sich auf jeden Fall mit den <a href="plan-office-web-apps-used-with-sharepoint-2013.md">SharePoint-Authentifizierungsanforderungen vertraut</a>. Wenn Sie in SharePoint 2010 den klassischen Authentifizierungsmodus verwendet haben, müssen <a href="https://technet.microsoft.com/de-de/library/gg251985(v=office.15)">vom klassischen Authentifizierungsmodus zur anspruchsbasierten Authentifizierung migrieren</a>.</p>
+<td><p>Verwenden Sie derzeit SharePoint 2010-Produkte, und planen Sie eine Migration zu SharePoint 2013? Leider kann SharePoint 2010-Produkte nicht als Host für Office Web Apps Server fungieren, und Office Web Apps steht nach einem Upgrade auf SharePoint 2013 nicht mehr zur Verfügung. Machen Sie sich auf jeden Fall mit den <a href="plan-office-web-apps-used-with-sharepoint-2013.md">SharePoint-Authentifizierungsanforderungen vertraut</a>. Wenn Sie in SharePoint 2010 den klassischen Authentifizierungsmodus verwendet haben, müssen <a href="https://technet.microsoft.com/de-de/library/gg251985(v=office.15)">vom klassischen Authentifizierungsmodus zur anspruchsbasierten Authentifizierung migrieren</a>.</p>
 <p><br />
 </p>
 <p>Eine der größten Änderungen ist, dass Sie Office Web Apps nicht auch auf den Servern installieren, auf denen SharePoint 2013 ausgeführt wird. <a href="what’s-new-with-office-web-apps-when-used-with-sharepoint-2013.md">Welche weiteren Neuerungen gibt es bei Verwenden von Office Web Apps mit SharePoint 2013-Produkten?</a></p></td>
@@ -214,7 +213,7 @@ In der folgenden Tabelle werden Ressourcen beschrieben, die IT-Spezialisten zur 
 <tr class="even">
 <td><p><img src="images/Ee890081.6fa793ee-ede9-4476-901c-de96ea37fc3a(Office.15).png" title="Chatsymbol" alt="Chatsymbol" /></p></td>
 <td><p><strong>Fragen und Feedback</strong></p></td>
-<td><p>Wenn Sie Fragen zur Bereitstellung und Verwaltung von Office Web Apps Server haben, können Sie diese im <a href="http://go.microsoft.com/fwlink/p/?linkid=259426">Planungs-, Bereitstellungs- und Kompatibilitätsforum für Office 2013 und Office 365 ProPlus</a> auf TechNet stellen.</p></td>
+<td><p>Wenn Sie Fragen zur Bereitstellung und Verwaltung von Office Web Apps Server haben, können Sie diese im <a href="http://go.microsoft.com/fwlink/p/?linkid=259426">Planungs-, Bereitstellungs- und Kompatibilitätsforum für Office 2013 und Office 365 ProPlus</a> auf TechNet stellen.</p></td>
 </tr>
 </tbody>
 </table>

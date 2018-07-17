@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # Bereitstellen von Office Web Apps Server 
 
-**Gilt für:** Office Web Apps Server
+_<strong>Gilt für:</strong> Office Web Apps Server_
 
-**Letztes Änderungsdatum des Themas:** 2017-10-05
+_<strong>Letztes Änderungsdatum des Themas:</strong> 2017-10-05_
 
 **Zusammenfassung:** Informationen zur lokalen Bereitstellung von Office Web Apps Server für die Verwendung durch SharePoint 2013 und Lync Server 2013.
 
