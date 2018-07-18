@@ -1,4 +1,4 @@
-﻿---
+---
 title: Standardöffnungsverhaltens für browserfähige Dokumente (Office Web Apps)
 TOCTitle: Konfigurieren des Standardöffnungsverhaltens für browserfähige Dokumente
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
@@ -110,9 +110,9 @@ Zum Festlegen des OpenInClient-Features in SharePoint 2013 können Sie folgende 
       ```PowerShell
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
-      ```        
-        Dabei ist *\<SiteCollURL\>* die URL der Websitesammlung.
-      ```
+      
+      Dabei ist *\<SiteCollURL\>* die URL der Websitesammlung.
+      
       - Um das OpenInClient-Feature für alle Websitesammlungen zu aktivieren (Dokumente in der Clientanwendung öffnen), geben Sie folgenden Befehl ein:
         
       ```PowerShell
@@ -124,9 +124,9 @@ Zum Festlegen des OpenInClient-Features in SharePoint 2013 können Sie folgende 
       ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
-      ```  
-        Dabei ist *\<SiteCollURL\>* die URL der Websitesammlung.
-      ```
+      
+      Dabei ist *\<SiteCollURL\>* die URL der Websitesammlung.
+      
       - Um das OpenInClient-Feature für alle Websitesammlungen zu deaktivieren (Dokumente im Browser öffnen), geben Sie folgenden Befehl ein:
         
       ```PowerShell
