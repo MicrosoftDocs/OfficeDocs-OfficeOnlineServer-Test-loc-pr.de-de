@@ -10,7 +10,6 @@ ms.translationtype: HT
 ---
 
 # Konfigurieren von Office Web Apps für SharePoint 2013
-
  
 
 _**Gilt für:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
@@ -123,9 +122,11 @@ Wird von diesem Befehl **False** zurückgegeben, führen Sie die folgenden Befeh
 
 ```PowerShell
     $config = (Get-SPSecurityTokenServiceConfig)
-
-    $config.AllowOAuthOverHttp = $true
-
+```
+```PowerShell
+   $config.AllowOAuthOverHttp = $true
+```
+```PowerShell
     $config.Update()
 ```
 

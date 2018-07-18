@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Video: Konfigurieren von Office Web Apps für SharePoint 2013
+# Video: Konfigurieren von Office Web Apps für SharePoint 2013 
 
- 
+_<strong>Gilt für:</strong> Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Gilt für:** Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Letztes Änderungsdatum des Themas:** 2016-12-16_
+_<strong>Letztes Änderungsdatum des Themas:</strong> 2016-12-16_
 
 **Zusammenfassung:** Vorstellung der neun wesentlichen Schritte zum Konfigurieren einer Office Web Apps Server-Farm für die Zusammenarbeit mit SharePoint 2013.
 

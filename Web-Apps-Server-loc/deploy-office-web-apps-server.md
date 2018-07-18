@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # Bereitstellen von Office Web Apps Server 
 
-_**Gilt für:** Office Web Apps Server_
+_<strong>Gilt für:</strong> Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:** 2017-10-05_
+_<strong>Letztes Änderungsdatum des Themas:</strong> 2017-10-05_
 
 **Zusammenfassung:** Informationen zur lokalen Bereitstellung von Office Web Apps Server für die Verwendung durch SharePoint 2013 und Lync Server 2013.
 
@@ -377,7 +377,9 @@ Falls .NET Framework 3.5-Features installiert und später wieder entfernt wurde
 
 ```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
+```
 
+```PowerShell
     iisreset /restart /noforce
 ```
 

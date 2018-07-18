@@ -10,7 +10,6 @@ ms.translationtype: HT
 ---
 
 # Inhaltsübersicht für Office Web Apps Server
-
  
 
 _**Gilt für:** Office Web Apps, Office Web Apps Server_

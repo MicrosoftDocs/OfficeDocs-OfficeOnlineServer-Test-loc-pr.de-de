@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Gilt für:** Office Web Apps Server_
+_<strong>Gilt für:</strong> Office Web Apps Server_
 
-_**Letztes Änderungsdatum des Themas:** 2016-12-16_
+_<strong>Letztes Änderungsdatum des Themas:</strong> 2016-12-16_
 
 **Zusammenfassung:** Enthält Artikel über Office Web Apps Server und darüber, wie Office Web Apps Funktionen für Hosts bereitgestellt werden.
 
