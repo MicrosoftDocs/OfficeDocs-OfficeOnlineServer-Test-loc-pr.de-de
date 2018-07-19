@@ -34,7 +34,7 @@ Nachdem Sie SharePoint 2013 so konfiguriert haben, dass Office Web Apps Server v
 In der Regel überschreibt das OpenInClient-Feature alle WOPI-Bindungen, die Sie zwischen SharePoint 2013 und Office Web Apps Server festgelegt haben. Anders gesagt, falls das OpenInClient-Feature einer SharePoint 2013-Bibliothek oder -Websitesammlung aktiviert ist, werden Dokumente in der Clientanwendung geöffnet, auch wenn Sie den SharePoint 2013-Server so konfiguriert haben, dass er Office Web Apps Server verwenden soll.
 
 
-> [!TIP]
+> [!NOTE]
 > Das Konfigurieren des Standardöffnungsverhaltens für browserfähige Dokumente wirkt sich nicht darauf aus, ob Benutzer die Features <STRONG>Auschecken</STRONG> und <STRONG>Senden an</STRONG> in SharePoint 2013 zum Herunterladen von Dokumenten verwenden können. Weitere Informationen zum Konfigurieren von Berechtigungen zum Auschecken, Herunterladen und Anzeigen in SharePoint 2013 finden Sie unter <A href="https://technet.microsoft.com/de-de/library/cc262939(v=office.15)">Planen der Berechtigungen für Websites und Inhalte in SharePoint 2013</A>.
 
 
@@ -44,13 +44,13 @@ In der Regel überschreibt das OpenInClient-Feature alle WOPI-Bindungen, die Sie
 Zum Festlegen des OpenInClient-Features in SharePoint 2013 können Sie folgende Verfahren verwenden.
 
 
-> [!TIP]
+> [!NOTE]
 > Für die Verfahren in diesem Artikel wird die SharePoint 2013 Management Shell zur Ausführung von SharePoint-Cmdlets verwendet. Wenn Sie stattdessen die Windows PowerShell-Konsole verwenden, müssen Sie mit dem Cmdlet <STRONG>Add-PSSnapin</STRONG> das Snap-In "Microsoft.SharePoint.PowerShell" hinzufügen. Weitere Informationen Weitere Informationen zum Verwenden von Windows PowerShell mit SharePoint 2013 finden Sie unter <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Verwenden von Windows Powershell zur Verwaltung von SharePoint 2013</A>.
 
 
 
 
-> [!TIP]
+> [!NOTE]
 > Sie können alle Aufgaben in Office 2013-Produktfamilien mit einer Maus, mit Tastenkombinationen oder per Fingereingabe durchführen. Informationen zum Verwenden von Tastenkombinationen und der Fingereingabe in Office-Produkten und -Diensten finden Sie unter <A href="http://go.microsoft.com/fwlink/p/?linkid=249150">Tastenkombinationen</A> und im <A href="http://go.microsoft.com/fwlink/p/?linkid=253163">Office-Leitfaden für die Gestensteuerung</A>.
 
 
@@ -78,7 +78,7 @@ Zum Festlegen des OpenInClient-Features in SharePoint 2013 können Sie folgende 
     Mit dem Cmdlet **Add-SPShellAdmin** kann ein Administrator die Berechtigung zur Verwendung von SharePoint 2013-Cmdlets gewähren.
     
 
-    > [!TIP]
+    > [!NOTE]
     > Wenn Sie keine Berechtigungen haben, wenden Sie sich an den Setupadministrator oder SQL&nbsp;Server-Administrator, um Berechtigungen anzufordern. Weitere Informationen über Windows PowerShell-Berechtigungen finden Sie unter <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> und <A href="https://technet.microsoft.com/de-de/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
@@ -164,7 +164,7 @@ Zum Festlegen des OpenInClient-Features in SharePoint 2013 können Sie folgende 
     Mit dem Cmdlet **Add-SPShellAdmin** kann ein Administrator die Berechtigung zur Verwendung von SharePoint 2013-Cmdlets gewähren.
     
 
-    > [!TIP]
+    > [!NOTE]
     > Wenn Sie keine Berechtigungen haben, wenden Sie sich an den Setupadministrator oder SQL&nbsp;Server-Administrator, um Berechtigungen anzufordern. Weitere Informationen über Windows PowerShell-Berechtigungen finden Sie unter <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> und <A href="https://technet.microsoft.com/de-de/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
