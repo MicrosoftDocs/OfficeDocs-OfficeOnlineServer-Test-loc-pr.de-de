@@ -62,7 +62,7 @@ In der folgenden Abbildung werden die Anzeige- und Bearbeitungsfunktionen von Of
 ![Eine Darstellung, die die Anzeige- und Bearbeitungsfunktionen von Office Web Apps auf verschiedenen Arten von Geräten zusammenfasst. Die für Touchscreens optimierten Funktionen sind hervorgehoben.](images/Ff431685.8bf76669-f511-4e02-8ed3-d658e9e746f0(Office.15).gif "Eine Darstellung, die die Anzeige- und Bearbeitungsfunktionen von Office Web Apps auf verschiedenen Arten von Geräten zusammenfasst. Die für Touchscreens optimierten Funktionen sind hervorgehoben.")
 
 
-> [!TIP]
+> [!NOTE]
 > Die PowerPoint-Übertragung wurde aus SharePoint 2013 entfernt. Sie steht über OneDrive und Lync Server 2013 zur Verfügung.
 
 
@@ -98,7 +98,7 @@ Office Web Apps Server stellt unter der Adresse "http://*Office Web Apps Server-
 Weitere Informationen zu Onlineviewern finden Sie unter [Planen für Onlineviewer](plan-office-web-apps-server.md).
 
 
-> [!TIP]
+> [!NOTE]
 > Microsoft hostet eine ausschließlich internetbasierte Version zum Erstellen einer URL auf <A href="http://go.microsoft.com/fwlink/?linkid=25654">Office.com</A>.
 
 
