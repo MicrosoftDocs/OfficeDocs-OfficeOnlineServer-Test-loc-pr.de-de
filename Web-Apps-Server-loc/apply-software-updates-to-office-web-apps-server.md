@@ -44,7 +44,7 @@ Mit Updates, die für Office Web Apps Server veröffentlicht wurden, werden Offi
 Sie müssen die Office Web Apps Server-Farm als Teil des Updateprozesses neu erstellen. Überprüfen Sie zur Vorbereitung des Neuerstellens der Office Web Apps Server-Farm die aktuellen Eigenschaften der Office Web Apps Server-Farm, indem Sie das Windows PowerShell-Cmdlet **Get-OfficeWebAppFarm** ausführen und die Parameter für [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) überprüfen. Die Parameter, die Sie für **New-OfficeWebAppsFarm** verwenden, sollten dieselben sein, die Sie bei der erstmaligen Einrichtung der Office Web Apps Server-Farm verwendet haben.
 
 
-> [!TIP]
+> [!NOTE]
 > Sie können die Aufgaben in diesem Artikel mit einer Maus, mithilfe von Tastenkombinationen oder per Fingereingabe durchführen. Weitere Informationen finden Sie in den folgenden Ressourcen: 
 > <UL>
 > <LI>
