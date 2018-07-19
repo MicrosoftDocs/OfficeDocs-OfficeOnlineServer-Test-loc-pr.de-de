@@ -30,7 +30,7 @@ Das Vorgehen müssen Sie sorgfältig planen, damit alle Hosts, also SharePoint 2
   - [Bereitstellen von Office Web Apps Server und Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
 
-> [!TIP]
+> [!NOTE]
 > SharePoint 2010-Produkte kann kein Host für Office Web Apps Server sein. Office Web Apps Server wird nicht von SharePoint Foundation 2010 oder SharePoint Server 2010 unterstützt. Office Web Apps Server wird auch nicht von Exchange Server 2013 unterstützt.
 
 
@@ -369,7 +369,7 @@ Das Zertifikat muss folgendermaßen importiert werden:
   - **Bei Farmen mit Lastenausgleich**   Bei einer SSL-Verschiebung muss das Zertifikat in das hardwarebasierte Lastenausgleichsmodul importiert werden. Wenn Sie keine SSL-Verschiebung vornehmen, müssen Sie das Zertifikat auf jedem Server in der Office Web Apps Server-Farm installieren.
 
 
-> [!TIP]
+> [!NOTE]
 > Verwenden Sie selbstsignierte Zertifikate nur in unwichtigeren Testumgebungen.
 
 
