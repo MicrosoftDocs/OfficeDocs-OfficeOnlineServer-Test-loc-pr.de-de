@@ -141,12 +141,12 @@ Führen Sie die folgenden Schritte auf allen Servern aus, auf denen Office Web A
 
 6.  Laden Sie [Office Web Apps Server SP1](https://go.microsoft.com/fwlink/p/?linkid=510097) (Empfohlen für Windows Server 2012 und Windows Server 2008 R2 SP1. Erforderlich für Windows Server 2012 R2.) herunter, und installieren Sie das Update.    
 
-    > [!TIP]
+    > [!NOTE]
     > Wenn Sie Office Web Apps Server&nbsp;SP1 zu einem späteren Zeitpunkt anwenden, befolgen Sie die Anweisungen unter <A href="apply-software-updates-to-office-web-apps-server.md">Anwenden von Softwareupdates auf Office Web Apps Server</A>.
 
 7.  Suchen Sie die neuesten Office Web Apps Server-Updates in der Liste im [TechNet Update Center für Office, Office-Server und verwandte Produkte](https://go.microsoft.com/fwlink/p/?linkid=280271).    
 
-    > [!TIP]
+    > [!NOTE]
     > Wenn Sie Office Web Apps Server&nbsp;SP1 nicht installieren, wenden Sie <A href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</A> an.
 
 ## Schritt 3: Installieren von Sprachpaketen für Office Web Apps Server
@@ -289,7 +289,7 @@ urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><r
 default="true" ext="xls"/><action name="view" 
 ```
 
-> [!TIP]
+> [!NOTE]
 > Abhängig von den Sicherheitseinstellungen Ihres Webbrowser sehen Sie ggf. eine Meldung, die Sie zur Auswahl von <STRONG>Alle Inhalte anzeigen</STRONG> auffordert, bevor der Inhalt der Such-XML-Datei angezeigt wird.
 
 
@@ -357,7 +357,7 @@ Wenn Office Web Apps Server wie erwartet ausgeführt wird, sollte in Ihrem Webbr
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/>
 ``` 
 
-> [!TIP]
+> [!NOTE]
 > Abhängig von den Sicherheitseinstellungen Ihres Webbrowser sehen Sie ggf. eine Meldung, die Sie zur Auswahl von <STRONG>Alle Inhalte anzeigen</STRONG> auffordert, bevor der Inhalt der Such-XML-Datei angezeigt wird.
 
 
